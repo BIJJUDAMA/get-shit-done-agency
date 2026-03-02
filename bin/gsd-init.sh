@@ -156,6 +156,19 @@ echo -e "\nSelected Role: $SELECTED_PERSONA_NAME\n"
 env_keys=("claude" "gemini" "cursor" "antigravity" "other")
 selected_env=""
 
+if [[ -z "$AUTO_ENV" ]]; then
+    if [[ -d ".claude" ]]; then
+        AUTO_ENV="claude"
+    elif [[ -d ".gemini" ]]; then
+        AUTO_ENV="antigravity"
+    elif [[ -d ".cursor" || -f ".cursorrules" ]]; then
+        AUTO_ENV="cursor"
+    fi
+    if [[ -n "$AUTO_ENV" ]]; then
+        echo -e "\n[INFO] Auto-detected environment: $AUTO_ENV"
+    fi
+fi
+
 if [[ -n "$AUTO_ENV" ]]; then
     valid=0
     for k in "${env_keys[@]}"; do

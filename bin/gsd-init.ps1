@@ -126,6 +126,16 @@ Write-Host "`nSelected Role: $($SelectedPersona.Name)`n" -ForegroundColor Green
 $EnvKeys = @("claude", "gemini", "cursor", "antigravity", "other")
 $SelectedEnv = ""
 
+if (-not $env) {
+    if (Test-Path ".claude") { $env = "claude" }
+    elseif (Test-Path ".gemini") { $env = "antigravity" }
+    elseif ((Test-Path ".cursor") -or (Test-Path ".cursorrules")) { $env = "cursor" }
+    
+    if ($env) {
+        Write-Host "`n[INFO] Auto-detected environment: $env" -ForegroundColor Cyan
+    }
+}
+
 if ($env) {
     if ($EnvKeys -contains $env) {
         $SelectedEnv = $env
