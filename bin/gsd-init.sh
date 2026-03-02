@@ -6,6 +6,30 @@
 set -e
 
 # --- Configuration ---
+if [[ -z "${BASH_SOURCE[0]}" ]] || [[ "${BASH_SOURCE[0]}" == "bash" ]] || [[ "${BASH_SOURCE[0]}" == "standard input" ]]; then
+    echo -e "\n[INFO] Remote execution detected. Bootstrapping GSD Agency..."
+    INSTALL_DIR="$HOME/.gsd-agency"
+    TMP_DIR=$(mktemp -d)
+    
+    echo "Downloading latest GSD Agency release..."
+    curl -sL "https://github.com/BIJJUDAMA/get-shit-done-agency/archive/refs/heads/main.tar.gz" | tar -xz -C "$TMP_DIR"
+    
+    echo "Extracting..."
+    rm -rf "$INSTALL_DIR"
+    mv "$TMP_DIR/get-shit-done-agency-main" "$INSTALL_DIR"
+    rm -rf "$TMP_DIR"
+    
+    echo -e "Executing local copy...\n"
+    
+    ARGS=()
+    [[ -n "$AUTO_ROLE" ]] && ARGS+=("--role=$AUTO_ROLE")
+    [[ -n "$AUTO_ENV" ]] && ARGS+=("--env=$AUTO_ENV")
+    [[ $DRY_RUN -eq 1 ]] && ARGS+=("--dry-run")
+    
+    exec bash "$INSTALL_DIR/bin/gsd-init.sh" "${ARGS[@]}" "$@"
+    exit $?
+fi
+
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" &> /dev/null && pwd)"
 METHODOLOGY_DIR="$(dirname "$SCRIPT_DIR")"
 AGENCY_AGENTS_DIR="${GSD_PERSONAS_DIR:-$METHODOLOGY_DIR/agency-agents}"

@@ -40,25 +40,29 @@ A complete AI agency at your fingertips. From frontend wizards to Reddit communi
 
 This tool is built entirely with native scripts, meaning there are no dependencies to install.
 
-### Windows (PowerShell)
+### Option 1: One-Liner (No Cloning Required) [RECOMMENDED]
 
+Use these commands from inside **ANY** project directory to instantly compose your GSD Agency config without manually cloning the entire repository.
+
+#### Windows (PowerShell)
 ```powershell
-# Navigate to your empty project directory
-cd your-project
-
-# Run the initialization script directly from the remote repository
 Invoke-RestMethod https://raw.githubusercontent.com/BIJJUDAMA/get-shit-done-agency/main/bin/gsd-init.ps1 | Invoke-Expression
 ```
 
-### Linux / Mac (Bash)
-
+#### Linux / macOS (Bash)
 ```bash
-# Navigate to your empty project directory
-cd your-project
-
-# Run the initialization script directly from the remote repository
-curl -sSL https://raw.githubusercontent.com/BIJJUDAMA/get-shit-done-agency/main/bin/gsd-init.sh | bash
+curl -sL https://raw.githubusercontent.com/BIJJUDAMA/get-shit-done-agency/main/bin/gsd-init.sh | bash
 ```
+
+> [!NOTE]
+> These commands automatically download the latest GSD Agency library to `~/.gsd-agency` if it doesn't already exist, keeping your project directories clean.
+
+### Option 2: Manual Clone
+If you prefer to have a local copy of the repository:
+1. Clone the repository: `git clone https://github.com/BIJJUDAMA/get-shit-done-agency.git`
+2. Run the initialization script from your target project directory:
+   - **Windows:** `powershell -ExecutionPolicy Bypass -File C:\path\to\gsd-init.ps1`
+   - **Linux/macOS:** `bash /path/to/gsd-init.sh`
 
 ---
 

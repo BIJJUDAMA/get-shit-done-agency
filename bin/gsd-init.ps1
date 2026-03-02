@@ -1,4 +1,3 @@
-[CmdletBinding()]
 Param(
     [string]$role = "",
     [string]$env = "",
@@ -31,7 +30,38 @@ Description:
 }
 
 # --- Configuration ---
-$ScriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
+$ScriptPath = $MyInvocation.MyCommand.Path
+
+if ([string]::IsNullOrEmpty($ScriptPath)) {
+    Write-Host "`n[INFO] Remote execution detected. Bootstrapping GSD Agency..." -ForegroundColor Cyan
+    $InstallDir = Join-Path $HOME ".gsd-agency"
+    $ZipPath = Join-Path $env:TEMP "gsd-agency.zip"
+    
+    Write-Host "Downloading latest GSD Agency release..."
+    [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+    Invoke-RestMethod -Uri "https://github.com/BIJJUDAMA/get-shit-done-agency/archive/refs/heads/main.zip" -OutFile $ZipPath
+    
+    Write-Host "Extracting..."
+    if (Test-Path $InstallDir) { Remove-Item $InstallDir -Recurse -Force }
+    Expand-Archive -Path $ZipPath -DestinationPath $env:TEMP -Force
+    Rename-Item -Path (Join-Path $env:TEMP "get-shit-done-agency-main") -NewName ".gsd-agency"
+    Move-Item -Path (Join-Path $env:TEMP ".gsd-agency") -Destination $HOME -Force
+    Remove-Item $ZipPath -Force
+
+    Write-Host "Executing local copy...`n" -ForegroundColor Cyan
+    
+    $LocalScript = Join-Path $InstallDir "bin\gsd-init.ps1"
+    
+    $Cmd = "& `"$LocalScript`""
+    if ($role) { $Cmd += " -role `"$role`"" }
+    if ($env) { $Cmd += " -env `"$env`"" }
+    if ($DryRun) { $Cmd += " -DryRun" }
+    
+    Invoke-Expression $Cmd
+    exit 0
+}
+
+$ScriptDir = Split-Path -Parent $ScriptPath
 $MethodologyDir = Split-Path -Parent $ScriptDir
 $AgencyAgentsDir = if ([string]::IsNullOrEmpty($env:GSD_PERSONAS_DIR)) { Join-Path $MethodologyDir "agency-agents" } else { $env:GSD_PERSONAS_DIR }
 $AdaptersDir = Join-Path $MethodologyDir "adapters"
