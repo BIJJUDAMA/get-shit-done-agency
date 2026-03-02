@@ -40,7 +40,7 @@ A complete AI agency at your fingertips. From frontend wizards to Reddit communi
 
 This tool is built entirely with native scripts, meaning there are no dependencies to install.
 
-### Option 1: One-Liner (No Cloning Required) [RECOMMENDED]
+### Option 1: One-Liner [RECOMMENDED]
 
 Use these commands from inside **ANY** project directory to instantly compose your GSD Agency config without manually cloning the entire repository.
 
@@ -109,6 +109,29 @@ When the AI assumes its persona, it strictly follows the GSD Agency methodology:
 2. **State Persistence:** The AI maintains a `STATE.md` to remember decisions across sessions.
 3. **Context Hygiene:** If the AI fails multiple times, it triggers a state dump and asks for a fresh session context. 
 4. **Empirical Validation:** The AI must provide concrete proof that its code works (no "trust me").
+
+---
+
+## Recommended .gitignore
+
+To keep your project repository clean and prevent GSD configuration or state files from being accidentally committed, add the following to your project's `.gitignore`:
+
+```text
+# GSD Methodology & State
+.gsd/
+STATE.md
+ROADMAP.md
+SPEC.md
+PROJECT_RULES.md
+ARCHITECTURE.md
+STACK.md
+
+# Agent Configurations
+.claude.md
+.gemini/
+.cursorrules
+INSTRUCTIONS.md
+```
 
 ---
 
