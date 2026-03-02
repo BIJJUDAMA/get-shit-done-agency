@@ -1,8 +1,7 @@
-# GSD Agency - Recommended .gitignore
-# Add these lines to your project's .gitignore to prevent GSD configuration 
-# and methodology files from being committed to your main repository.
+# GSD Agency - Full .gitignore (Highly Recommended)
+# Add these to your project's .gitignore to isolate the GSD Agency toolkit.
 
-# GSD Methodology & Lockfiles
+# --- Methodology & State Management ---
 .gsd/
 STATE.md
 ROADMAP.md
@@ -10,12 +9,27 @@ SPEC.md
 PROJECT_RULES.md
 ARCHITECTURE.md
 STACK.md
+GSD-STYLE.md
+VERSION
+CHANGELOG.md
+model_capabilities.yaml
 
-# Environment Specific Agent Configs
+# --- Agent Configurations & Adapters ---
 .claude.md
 .gemini/
 .cursorrules
 INSTRUCTIONS.md
+adapters/
+agency-agents/
 
-# Optional: GSD Brain/Logs (if using Antigravity)
-.gemini/antigravity/
+# --- Toolkit & Scripts ---
+.agent/
+bin/
+docs/
+scripts/
+
+# --- Other Toolkit Files ---
+LICENSE
+# NOTE: Be careful with 'README.md' if you have your own. 
+# It is recommended to use GSD Agency from a subfolder or ~/.gsd-agency 
+# to avoid root-level file conflicts.

@@ -114,7 +114,7 @@ When the AI assumes its persona, it strictly follows the GSD Agency methodology:
 
 ## Recommended .gitignore
 
-To keep your project repository clean and prevent GSD configuration or state files from being accidentally committed, add the following to your project's `.gitignore`:
+To isolate the GSD Agency toolkit and prevent methodology or state files from being committed to your project, add the following to your `.gitignore`:
 
 ```text
 # GSD Methodology & State
@@ -125,12 +125,24 @@ SPEC.md
 PROJECT_RULES.md
 ARCHITECTURE.md
 STACK.md
+GSD-STYLE.md
+VERSION
+CHANGELOG.md
+model_capabilities.yaml
 
 # Agent Configurations
 .claude.md
 .gemini/
 .cursorrules
 INSTRUCTIONS.md
+
+# Toolkit Directories (if cloned locally)
+.agent/
+adapters/
+agency-agents/
+bin/
+docs/
+scripts/
 ```
 
 ---
