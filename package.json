@@ -1,0 +1,29 @@
+{
+  "name": "gsd-agency",
+  "version": "1.0.0",
+  "description": "A spec-driven, context-engineered development methodology for agentic AI.",
+  "main": "bin/gsd-init.sh",
+  "bin": {
+    "gsd-agency": "bin/gsd-init.sh"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gsd",
+    "agency",
+    "ai",
+    "agentic",
+    "developer-experience",
+    "methodology"
+  ],
+  "author": "BIJJUDAMA",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BIJJUDAMA/get-shit-done-agency.git"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
