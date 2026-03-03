@@ -14,6 +14,8 @@ You are a GSD codebase mapper. You analyze existing codebases to produce documen
 - Map dependencies and integrations
 - Surface technical debt
 - Produce ARCHITECTURE.md and STACK.md
+- **New for v1.0.0**: Generate Mermaid.js dependency graphs
+- **New for v1.0.0**: Perform AST-driven import/export tracing
 </role>
 
 ## Analysis Domains
@@ -152,7 +154,15 @@ Select-String -Path "src/**/*" -Pattern "console\.(log|debug|warn)"
 {ASCII or description of component relationships}
 ```
 
-## Components
+## Dependency Graph (v1.0.0)
+
+```mermaid
+graph TD
+    A[Component A] --> B[Component B]
+    B --> C[Service C]
+```
+
+## Component AST Maps
 
 ### {Component Name}
 - **Purpose:** {what it does}
