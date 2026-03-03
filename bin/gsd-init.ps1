@@ -354,6 +354,14 @@ if ($DryRun) {
         Copy-Item (Join-Path $TemplatesSourceDir "GSD_METHODOLOGY.md") (Join-Path $GsdTemplatesDir "GSD_METHODOLOGY.md") -Force
         Write-Host "[SUCCESS] GSD v1.0.0 templates deployed." -ForegroundColor Green
     }
+    
+    # Deploy Core Files
+    if (Test-Path $MethodologyDir) {
+        Copy-Item (Join-Path $MethodologyDir "PROJECT_RULES.md") (Join-Path $PWD.Path "PROJECT_RULES.md") -Force
+        Copy-Item (Join-Path $MethodologyDir "GSD-STYLE.md") (Join-Path $PWD.Path "GSD-STYLE.md") -Force
+        Copy-Item (Join-Path $MethodologyDir ".gitignore-GSD-agency-sample") (Join-Path $PWD.Path ".gitignore-GSD-agency-sample") -Force
+        Write-Host "[SUCCESS] Core GSD methodology files deployed." -ForegroundColor Green
+    }
 
     # Install Git Hooks
     $HooksScript = Join-Path $MethodologyDir "scripts\install-hooks.sh"

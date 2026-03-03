@@ -357,6 +357,14 @@ else
         cp "$TEMPLATES_DIR/GSD_METHODOLOGY.md" "$GSD_RUN_DIR/templates/GSD_METHODOLOGY.md"
         echo "[SUCCESS] GSD v1.0.0 templates deployed."
     fi
+    
+    # Deploy Core Files
+    if [[ -d "$METHODOLOGY_DIR" ]]; then
+        cp "$METHODOLOGY_DIR/PROJECT_RULES.md" "$PWD/PROJECT_RULES.md"
+        cp "$METHODOLOGY_DIR/GSD-STYLE.md" "$PWD/GSD-STYLE.md"
+        cp "$METHODOLOGY_DIR/.gitignore-GSD-agency-sample" "$PWD/.gitignore-GSD-agency-sample"
+        echo "[SUCCESS] Core GSD methodology files deployed."
+    fi
 
     # Install Git Hooks
     if [[ -f "$METHODOLOGY_DIR/scripts/install-hooks.sh" ]]; then
