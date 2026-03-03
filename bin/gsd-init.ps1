@@ -2,6 +2,8 @@ Param(
     [string]$role = "",
     [string]$env = "",
     [switch]$DryRun,
+    [switch]$Version,
+    [switch]$Update,
     [switch]$Help
 )
 
@@ -18,6 +20,8 @@ Options:
   -role <name>     Automatically select a persona (e.g., -role engineering-senior-developer)
   -env <name>      Automatically select an environment (claude, gemini, cursor, antigravity)
   -DryRun          Print the composed output to stdout instead of writing files
+  -Version         Show version information
+  -Update          Update GSD Agency to the latest version
   -Help            Show this help message
 
 Description:
@@ -26,6 +30,18 @@ Description:
   into your current project directory.
 
 "@
+    exit 0
+}
+
+if ($Version) {
+    if (Test-Path $VersionFile) { Get-Content $VersionFile } else { Write-Host "unknown" }
+    exit 0
+}
+
+if ($Update) {
+    Write-Host "Checking for updates..."
+    # Future: git pull or binary update logic
+    Write-Host "You are on the latest version."
     exit 0
 }
 
@@ -110,6 +126,19 @@ foreach ($file in $PersonaFiles) {
     $Personas += [PSCustomObject]@{
         Name = $file.BaseName
         Path = $file.FullName
+    }
+}
+
+# Local Persona Scan
+$LocalPersonasDir = Join-Path $PWD.Path ".gsd\personas"
+if (Test-Path $LocalPersonasDir) {
+    Write-Host "[INFO] Scanning local personas in $LocalPersonasDir..." -ForegroundColor Cyan
+    $LocalFiles = Get-ChildItem -Path $LocalPersonasDir -Filter "*.md"
+    foreach ($file in $LocalFiles) {
+        $Personas += [PSCustomObject]@{
+            Name = "[LOCAL] $($file.BaseName)"
+            Path = $file.FullName
+        }
     }
 }
 
@@ -261,10 +290,13 @@ if (!(Test-Path $AdapterPath)) {
 $DynamicBlock = @"
 ## System Commands (Dynamic Integration)
 This project uses GSD slash commands. You must obey these commands when issued by the user:
-- `/plan` : Decompose requirements into executable phases.
-- `/execute` : Implement the current phase safely.
-- `/verify` : Validate implemented work.
-- `/map` : Analyze the codebase and log architecture.
+- `/plan` : Decompose requirements into SPEC.md.
+- `/execute` : Implement the current phase from STATE.md.
+- `/verify` : Run empirical tests (preferably sandboxed) and prove success.
+- `/escalate` : Force a context break and prepare a handoff to a Debugger persona after 3 failures.
+- `/sync` : Reconcile STATE.md with recent manual git commits.
+- `/handoff` : Generate structured YAML to pass context cleanly to the next specialized agent.
+- `/map` : AST-driven dependency graphing.
 - `/pause` : Dump state for a clean session handoff.
 "@
 
@@ -309,10 +341,27 @@ if ($DryRun) {
     Write-Host "[SUCCESS] Successfully wrote composition to: $TargetFullPath" -ForegroundColor Green
 
     $GsdRunDir = Join-Path $PWD.Path ".gsd"
-    if (!(Test-Path $GsdRunDir)) {
-        New-Item -ItemType Directory -Force -Path $GsdRunDir | Out-Null
+    $GsdTemplatesDir = Join-Path $GsdRunDir "templates"
+    if (!(Test-Path $GsdTemplatesDir)) {
+        New-Item -ItemType Directory -Force -Path $GsdTemplatesDir | Out-Null
     }
     
+    # Deploy Templates
+    $TemplatesSourceDir = Join-Path $MethodologyDir "templates"
+    if (Test-Path $TemplatesSourceDir) {
+        Copy-Item (Join-Path $TemplatesSourceDir "docker-compose.gsd.yml") (Join-Path $PWD.Path "docker-compose.gsd.yml") -Force
+        Copy-Item (Join-Path $TemplatesSourceDir "HANDOFF.yaml") (Join-Path $GsdTemplatesDir "HANDOFF.yaml") -Force
+        Copy-Item (Join-Path $TemplatesSourceDir "GSD_METHODOLOGY.md") (Join-Path $GsdTemplatesDir "GSD_METHODOLOGY.md") -Force
+        Write-Host "[SUCCESS] GSD v1.0.0 templates deployed." -ForegroundColor Green
+    }
+
+    # Install Git Hooks
+    $HooksScript = Join-Path $MethodologyDir "scripts\install-hooks.sh"
+    if (Test-Path $HooksScript) {
+        # Running via bash assuming git bash is in path
+        & bash $HooksScript
+    }
+
     # Write JSON Lockfile
     $LockfileData = @{
         generatedAt = (Get-Date).ToUniversalTime().ToString("yyyy-MM-ddTHH:mm:ssZ")

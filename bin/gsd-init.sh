@@ -68,6 +68,8 @@ Options:
   --role=<name>    Automatically select a persona (e.g., --role=engineering-senior-developer)
   --env=<name>     Automatically select an environment (claude, gemini, cursor, antigravity)
   --dry-run        Print the composed output to stdout instead of writing files
+  --version, -v    Show version information
+  --update         Update GSD Agency to the latest version
   --help, -h       Show this help message
 
 Description:
@@ -80,6 +82,16 @@ Description:
         --dry-run)
             DRY_RUN=1
             shift
+            ;;
+        --version|-v)
+            if [[ -f "$VERSION_FILE" ]]; then cat "$VERSION_FILE"; else echo "unknown"; fi
+            exit 0
+            ;;
+        --update)
+            echo "Checking for updates..."
+            # Future: git pull or binary update logic
+            echo "You are on the latest version."
+            exit 0
             ;;
         --role=*)
             AUTO_ROLE="${arg#*=}"
@@ -116,6 +128,17 @@ while IFS= read -r -d '' file; do
     personas+=("$filename")
     persona_paths+=("$file")
 done < <(find "$AGENCY_AGENTS_DIR" -mindepth 2 -maxdepth 2 -type f -name "*.md" ! -path "*/.*" -print0)
+
+# Local Persona Scan
+LOCAL_PERSONAS_DIR="$PWD/.gsd/personas"
+if [[ -d "$LOCAL_PERSONAS_DIR" ]]; then
+    echo "[INFO] Scanning local personas in $LOCAL_PERSONAS_DIR..."
+    while IFS= read -r -d '' file; do
+        filename=$(basename "$file" .md)
+        personas+=("[LOCAL] $filename")
+        persona_paths+=("$file")
+    done < <(find "$LOCAL_PERSONAS_DIR" -maxdepth 1 -type f -name "*.md" -print0)
+fi
 
 if [[ ${#personas[@]} -eq 0 ]]; then
     echo "[ERROR] No persona markdown files found in $AGENCY_AGENTS_DIR"
@@ -294,10 +317,13 @@ fi
 # Dynamic Injection
 DYNAMIC_BLOCK="## System Commands (Dynamic Integration)
 This project uses GSD slash commands. You must obey these commands when issued by the user:
-- \`/plan\` : Decompose requirements into executable phases.
-- \`/execute\` : Implement the current phase safely.
-- \`/verify\` : Validate implemented work.
-- \`/map\` : Analyze the codebase and log architecture.
+- \`/plan\` : Decompose requirements into SPEC.md.
+- \`/execute\` : Implement the current phase from STATE.md.
+- \`/verify\` : Run empirical tests (preferably sandboxed) and prove success.
+- \`/escalate\` : Force a context break and prepare a handoff to a Debugger persona after 3 failures.
+- \`/sync\` : Reconcile STATE.md with recent manual git commits.
+- \`/handoff\` : Generate structured YAML to pass context cleanly to the next specialized agent.
+- \`/map\` : AST-driven dependency graphing.
 - \`/pause\` : Dump state for a clean session handoff."
 
 FINAL_ADAPTER="$DYNAMIC_BLOCK
@@ -321,8 +347,22 @@ else
     echo "[SUCCESS] Successfully wrote composition to: $PWD/$OUTPUT_PATH"
 
     GSD_RUN_DIR="$PWD/.gsd"
-    mkdir -p "$GSD_RUN_DIR"
+    mkdir -p "$GSD_RUN_DIR/templates"
     
+    # Deploy Templates
+    TEMPLATES_DIR="$METHODOLOGY_DIR/templates"
+    if [[ -d "$TEMPLATES_DIR" ]]; then
+        cp "$TEMPLATES_DIR/docker-compose.gsd.yml" "$PWD/docker-compose.gsd.yml"
+        cp "$TEMPLATES_DIR/HANDOFF.yaml" "$GSD_RUN_DIR/templates/HANDOFF.yaml"
+        cp "$TEMPLATES_DIR/GSD_METHODOLOGY.md" "$GSD_RUN_DIR/templates/GSD_METHODOLOGY.md"
+        echo "[SUCCESS] GSD v1.0.0 templates deployed."
+    fi
+
+    # Install Git Hooks
+    if [[ -f "$METHODOLOGY_DIR/scripts/install-hooks.sh" ]]; then
+        bash "$METHODOLOGY_DIR/scripts/install-hooks.sh"
+    fi
+
     # Write JSON Lockfile
     cat > "$GSD_RUN_DIR/gsd.config.json" <<EOF
 {
