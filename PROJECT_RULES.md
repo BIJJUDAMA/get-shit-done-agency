@@ -22,19 +22,19 @@
 
 ## Proof Requirements
 
-Every change requires verification evidence:
+Every change requires verification evidence. For v1.0.0, verification should be performed inside the **GSD Sandbox** (Docker).
 
 | Change Type | Required Proof |
 |-------------|----------------|
-| API endpoint | curl/HTTP response |
+| API endpoint | curl/HTTP response (Sandbox) |
 | UI change | Screenshot |
-| Build/compile | Command output |
-| Test | Test runner output |
-| Config | Verification command |
+| Build/compile | Command output (Sandbox) |
+| Test | Test runner output (Sandbox) |
+| Config | Verification command (Sandbox) |
 
 **Never accept**: "It looks correct", "This should work", "I've done similar before".
 
-**Always require**: Captured output, screenshot, or test result.
+**Always require**: Captured output from `gsd_sandbox`, screenshot, or test result.
 
 ---
 
@@ -198,58 +198,65 @@ scripts/                  # Utility scripts
 
 ---
 
+## Command Dictionary (v1.0.0)
+
+### `/plan` (Requirement Decomposition)
+Analyze requirements and write a detailed `SPEC.md`. Break work into atomic, executable phases. Update `STATE.md`.
+
+### `/execute` (Atomic Implementation)
+Implement *only* the current phase from `STATE.md`. No scope creep.
+
+### `/verify` (Empirical Grounding)
+1. Generate a test script.
+2. Run inside `gsd_sandbox`: `docker exec gsd_sandbox <command>`.
+3. Only mark `[COMPLETED]` if output proves success.
+
+### `/map` (AST & Dependency Graphing)
+Trace actual imports/exports. Generate a Mermaid.js graph in `ARCHITECTURE.md`. Only read files connected on the graph.
+
+### `/sync` (Human-AI Reconciliation)
+1. Read `.gsd/PENDING_SYNC.md` (populated by git post-commit hook).
+2. Reconcile manual changes with `STATE.md`.
+3. Update `ARCHITECTURE.md` graph.
+
+### `/escalate` (Anti-Hallucination Protocol)
+**Trigger**: `/verify` fails 3 times OR user types `/escalate`.
+Rule: Stop coding. No apologies.
+1. Mark phase `[BLOCKED]` in `STATE.md`.
+2. Generate `ESCALATION_REPORT.md` (Goal, Approaches, Errors, Hypothesis, Required Persona).
+3. Provide handoff prompt for a fresh session.
+
+### `/handoff` (Context Compression)
+Compress working context into `HANDOFF.yaml`. Detail phase, achieved objectives, files modified, and next steps.
+
+---
+
 ## Token Efficiency Rules
 
 **Goal:** Minimize token consumption while maintaining output quality.
 
-### Loading Rules
+**Loading Rules:**
+- Search first (grep, ripgrep) before full read.
+- Use outline for files >200 lines.
+- Reference summaries instead of re-reading.
 
-| Action | Rule |
-|--------|------|
-| Before reading file | Search first (grep, ripgrep) |
-| File >200 lines | Use outline, not full file |
-| File already understood | Reference summary, don't reload |
-| >5 files needed | Stop, reconsider approach |
-
-### Budget Thresholds
-
-| Usage | Action Required |
-|-------|-----------------|
-| 0-50% | Proceed normally |
-| 50-70% | Switch to outline mode, compress context |
-| 70%+ | State dump required, recommend fresh session |
-
-### Compression Protocol
-
-After understanding a file:
-1. Create summary in STATE.md or task notes
-2. Reference summary instead of re-reading
-3. Only reload specific sections if needed
-
-### Per-Wave Efficiency
-
-- Start each wave with minimal context
-- Load files just-in-time (when task requires)
-- Compress/summarize before moving to next wave
-- Document token usage in state snapshots (optional)
-
-**Anti-patterns:**
-- Loading files "just in case"
-- Re-reading files already understood
-- Full file reads when snippets suffice
-- Ignoring budget warnings
+**Budget Thresholds:**
+- 0-50%: Proceed normally.
+- 50-70%: Switch to outline mode.
+- 70%+: State dump + fresh session required.
 
 ---
 
-## Quick Reference
+## Quick Reference (v1.0.0)
 
 ```
 Before coding    → SPEC.md must be FINALIZED
 Before file read → Search first, then targeted read
 After each task  → Commit + update STATE.md
-After each wave  → State snapshot
-After 3 failures → State dump + fresh session
-Before "Done"    → Empirical proof captured
+After 3 failures → /escalate (State dump + fresh session)
+Before "Done"    → Empirical proof (Sandbox) captured
+Manual changes   → /sync to update brain
+Persona switch   → /handoff (Generate HANDOFF.yaml)
 ```
 
 ---
