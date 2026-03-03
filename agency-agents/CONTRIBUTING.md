@@ -1,34 +1,36 @@
-# 🤝 Contributing to The Agency
+# Contributing to The Agency
 
 First off, thank you for considering contributing to The Agency! It's people
 like you who make this collection of AI agents better for everyone.
 
-## 📋 Table of Contents
+## Table of Contents
 
 - [Code of Conduct](#code-of-conduct)
 - [How Can I Contribute?](#how-can-i-contribute)
 - [Agent Design Guidelines](#agent-design-guidelines)
 - [Pull Request Process](#pull-request-process)
 - [Style Guide](#style-guide)
-- [Community](#community)
+- [Questions](#questions)
 
 ---
 
-## 📜 Code of Conduct
+## Code of Conduct
 
 This project and everyone participating in it is governed by our Code of
 Conduct. By participating, you are expected to uphold this code:
 
 - **Be Respectful**: Treat everyone with respect. Healthy debate is encouraged,
   but personal attacks are not tolerated.
-- **Be Inclusive**: Welcome and support people of all backgrounds and identities.
-- **Be Collaborative**: What we create together is better than what we create alone.
-- **Be Professional**: Keep discussions focused on improving the agents and
-  the community.
+- **Be Inclusive**: Welcome and support people of all backgrounds and
+  identities.
+- **Be Collaborative**: What we create together is better than what we create
+  alone.
+- **Be Professional**: Keep discussions focused on improving the agents and the
+  community.
 
 ---
 
-## 🎯 How Can I Contribute?
+## How Can I Contribute?
 
 ### 1. Create a New Agent
 
@@ -80,7 +82,7 @@ Found a problem? Let us know:
 
 ---
 
-## 🎨 Agent Design Guidelines
+## Agent Design Guidelines
 
 ### Agent File Structure
 
@@ -102,7 +104,7 @@ color: colorname or "#hexcode"
 - **Memory**: What the agent remembers and learns
 - **Experience**: Domain expertise and perspective
 
-## 🎯 Your Core Mission
+## Your Core Mission
 
 - Primary responsibility 1 with clear deliverables
 - Primary responsibility 2 with clear deliverables
@@ -113,7 +115,7 @@ color: colorname or "#hexcode"
 
 Domain-specific rules and constraints that define the agent's approach
 
-## 📋 Your Technical Deliverables
+## Your Technical Deliverables
 
 Concrete examples of what the agent produces:
 
@@ -122,7 +124,7 @@ Concrete examples of what the agent produces:
 - Frameworks
 - Documents
 
-## 🔄 Your Workflow Process
+## Your Workflow Process
 
 Step-by-step process the agent follows:
 
@@ -137,7 +139,7 @@ Step-by-step process the agent follows:
 - Example phrases and patterns
 - Tone and approach
 
-## 🔄 Learning & Memory
+## Learning & Memory
 
 What the agent learns from:
 
@@ -146,7 +148,7 @@ What the agent learns from:
 - User feedback
 - Domain evolution
 
-## 🎯 Your Success Metrics
+## Your Success Metrics
 
 Measurable outcomes:
 
@@ -208,7 +210,7 @@ Advanced techniques and approaches the agent masters
 
 ---
 
-## 🔄 Pull Request Process
+## Pull Request Process
 
 ### Before Submitting
 
@@ -243,8 +245,7 @@ Advanced techniques and approaches the agent masters
 ```markdown
 ## Agent Information
 
-**Agent Name**: [Name]
-**Category**: [engineering/design/marketing/etc.]
+**Agent Name**: [Name] **Category**: [engineering/design/marketing/etc.]
 **Specialty**: [One-line description]
 
 ## Motivation
@@ -268,7 +269,7 @@ Advanced techniques and approaches the agent masters
 
 ---
 
-## 📐 Style Guide
+## Style Guide
 
 ### Writing Style
 
@@ -290,19 +291,12 @@ Advanced techniques and approaches the agent masters
 ```markdown
 ## Example Code Block
 
-\`\`\`typescript
-// Always include:
-// 1. Language specification for syntax highlighting
-// 2. Comments explaining key concepts
-// 3. Real, runnable code (not pseudo-code)
-// 4. Modern best practices
+\`\`\`typescript // Always include: // 1. Language specification for syntax
+highlighting // 2. Comments explaining key concepts // 3. Real, runnable code
+(not pseudo-code) // 4. Modern best practices
 
-interface AgentExample {
-name: string;
-specialty: string;
-deliverables: string[];
-}
-\`\`\`
+interface AgentExample { name: string; specialty: string; deliverables:
+string[]; } \`\`\`
 ```
 
 ### Tone
@@ -315,7 +309,7 @@ deliverables: string[];
 
 ---
 
-## 🌟 Recognition
+## Recognition
 
 Contributors who make significant contributions will be:
 
@@ -326,7 +320,7 @@ Contributors who make significant contributions will be:
 
 ---
 
-## 🤔 Questions
+## Questions
 
 - **General Questions**: [GitHub Discussions](../../discussions)
 - **Bug Reports**: [GitHub Issues](../../issues)
@@ -335,7 +329,7 @@ Contributors who make significant contributions will be:
 
 ---
 
-## 📚 Resources
+## Resources
 
 ### For New Contributors
 
@@ -356,7 +350,7 @@ Contributors who make significant contributions will be:
 
 ---
 
-## 🎉 Thank You
+## Thank You
 
 Your contributions make The Agency better for everyone. Whether you're:
 

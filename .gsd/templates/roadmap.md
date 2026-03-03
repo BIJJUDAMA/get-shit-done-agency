@@ -15,8 +15,7 @@ updated: [ISO timestamp]
 
 # Roadmap
 
-> **Current Phase:** {N} - {name}
-> **Status:** {planning | executing | verifying}
+> **Current Phase:** {N} - {name} **Status:** {planning | executing | verifying}
 
 ## Must-Haves (from SPEC)
 
@@ -30,9 +29,8 @@ updated: [ISO timestamp]
 
 ### Phase 1: {Foundation}
 
-**Status:** ⬜ Not Started | 🔄 In Progress | ✅ Complete
-**Objective:** {What this phase delivers}
-**Requirements:** REQ-01, REQ-02
+**Status:** ⬜ Not Started | 🔄 In Progress | ✅ Complete **Objective:** {What
+this phase delivers} **Requirements:** REQ-01, REQ-02
 
 **Plans:**
 
@@ -43,9 +41,8 @@ updated: [ISO timestamp]
 
 ### Phase 2: {Core Feature}
 
-**Status:** ⬜ Not Started
-**Objective:** {What this phase delivers}
-**Depends on:** Phase 1
+**Status:** ⬜ Not Started **Objective:** {What this phase delivers} **Depends
+on:** Phase 1
 
 **Plans:**
 
@@ -56,16 +53,14 @@ updated: [ISO timestamp]
 
 ### Phase 3: {Integration}
 
-**Status:** ⬜ Not Started
-**Objective:** {What this phase delivers}
-**Depends on:** Phase 2
+**Status:** ⬜ Not Started **Objective:** {What this phase delivers} **Depends
+on:** Phase 2
 
 ---
 
 ### Phase 4: {Polish/Launch}
 
-**Status:** ⬜ Not Started
-**Objective:** {Final touches and deployment}
+**Status:** ⬜ Not Started **Objective:** {Final touches and deployment}
 **Depends on:** Phase 3
 
 ---

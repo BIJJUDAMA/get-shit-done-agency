@@ -18,8 +18,7 @@ Quickly capture an idea, task, or issue without interrupting current work flow.
 
 **Output:**
 
-- `.gsd/TODO.md` — Accumulated todo items
-  </context>
+- `.gsd/TODO.md` — Accumulated todo items </context>
 
 <process>
 

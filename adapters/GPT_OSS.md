@@ -1,7 +1,7 @@
 # GPT & Open Source Models Adapter
 
-> **Everything in this file is optional.**
-> For canonical rules, see [PROJECT_RULES.md](../PROJECT_RULES.md).
+> **Everything in this file is optional.** For canonical rules, see
+> [PROJECT_RULES.md](../PROJECT_RULES.md).
 
 This adapter provides guidance for GPT models and open-source alternatives.
 
@@ -114,9 +114,9 @@ When working with limited context:
 
 ## Anti-Patterns
 
-❌ **Assuming GPT-4 context** — Verify actual model limits
-❌ **Complex nested prompts** — Keep structure flat and clear
-❌ **Ignoring model limits** — Quality crashes hard past context limit
+❌ **Assuming GPT-4 context** — Verify actual model limits ❌ **Complex nested
+prompts** — Keep structure flat and clear ❌ **Ignoring model limits** — Quality
+crashes hard past context limit
 
 ---
 

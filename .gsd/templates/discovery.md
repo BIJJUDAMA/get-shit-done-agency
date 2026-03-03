@@ -1,8 +1,10 @@
 # Discovery Template
 
-Template for `.gsd/phases/{N}/DISCOVERY.md` — shallow research for library/option decisions.
+Template for `.gsd/phases/{N}/DISCOVERY.md` — shallow research for
+library/option decisions.
 
-**Purpose:** Answer "which library/option should we use" questions during planning.
+**Purpose:** Answer "which library/option should we use" questions during
+planning.
 
 For deep ecosystem research, use `/research-phase` which produces RESEARCH.md.
 
@@ -17,21 +19,16 @@ type: discovery
 topic: [discovery-topic]
 ---
 
-<discovery_objective>
-Discover [topic] to inform [phase name] implementation.
+<discovery_objective> Discover [topic] to inform [phase name] implementation.
 
-Purpose: [What decision/implementation this enables]
-Scope: [Boundaries]
-Output: DISCOVERY.md with recommendation
-</discovery_objective>
+Purpose: [What decision/implementation this enables] Scope: [Boundaries] Output:
+DISCOVERY.md with recommendation </discovery_objective>
 
-<discovery_scope>
-<include>
+<discovery_scope> <include>
 
 - [Question to answer]
 - [Area to investigate]
-- [Specific comparison if needed]
-  </include>
+- [Specific comparison if needed] </include>
 
 <exclude>
 - [Out of scope for this discovery]
@@ -108,9 +105,7 @@ Create `.gsd/phases/{N}/DISCOVERY.md`:
 - [Primary sources used]
 </sources>
 
-<open_questions>
-[What needs validation during implementation]
-</open_questions>
+<open_questions> [What needs validation during implementation] </open_questions>
 ```
 
 ---

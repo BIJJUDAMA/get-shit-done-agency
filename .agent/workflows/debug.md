@@ -16,15 +16,13 @@ Systematically diagnose an issue using hypothesis-driven debugging, with persist
 <context>
 **Issue:** $ARGUMENTS (description of the problem to debug)
 
-**Skill reference:** `.agent/skills/debugger/SKILL.md`
-</context>
+**Skill reference:** `.agent/skills/debugger/SKILL.md` </context>
 
 <process>
 
 ## 1. Initialize Debug Session
 
-Check for existing debug state:
-**PowerShell:**
+Check for existing debug state: **PowerShell:**
 
 ```powershell
 Test-Path ".gsd/DEBUG.md"
@@ -61,9 +59,8 @@ Create/update `.gsd/DEBUG.md`:
 
 {Exact description of the problem}
 
-**When:** {When does it occur?}
-**Expected:** {What should happen?}
-**Actual:** {What actually happens?}
+**When:** {When does it occur?} **Expected:** {What should happen?} **Actual:**
+{What actually happens?}
 ```
 
 ---
@@ -127,10 +124,8 @@ Test highest likelihood first:
 
 ### Attempt 1
 
-**Testing:** H1 — {hypothesis}
-**Action:** {what you did to test}
-**Result:** {outcome}
-**Conclusion:** {CONFIRMED | ELIMINATED | INCONCLUSIVE}
+**Testing:** H1 — {hypothesis} **Action:** {what you did to test} **Result:**
+{outcome} **Conclusion:** {CONFIRMED | ELIMINATED | INCONCLUSIVE}
 ```
 
 ---
@@ -149,10 +144,9 @@ Update DEBUG.md:
 ```markdown
 ## Resolution
 
-**Root Cause:** {what was actually wrong}
-**Fix:** {what was changed}
-**Verified:** {how fix was verified}
-**Regression Check:** {what else was tested}
+**Root Cause:** {what was actually wrong} **Fix:** {what was changed}
+**Verified:** {how fix was verified} **Regression Check:** {what else was
+tested}
 ```
 
 ---

@@ -20,8 +20,7 @@ Conduct technical research to inform planning decisions for a phase.
 | 2     | 15-30 min | Choosing between options, new integration |
 | 3     | 1+ hour   | Architectural decision, novel problem     |
 
-**Default:** Level 2 unless specified.
-</discovery_levels>
+**Default:** Level 2 unless specified. </discovery_levels>
 
 <process>
 

@@ -8,7 +8,7 @@
 
 ## Core Protocol
 
-**SPEC → PLAN → EXECUTE → VERIFY → COMMIT**
+### SPEC ➔ PLAN ➔ EXECUTE ➔ VERIFY ➔ COMMIT
 
 1. **SPEC**: Define requirements in `.gsd/SPEC.md` until status is `FINALIZED`
 2. **PLAN**: Decompose into phases in `.gsd/ROADMAP.md`, then detailed plans
@@ -16,13 +16,15 @@
 4. **VERIFY**: Prove completion with empirical evidence
 5. **COMMIT**: One task = one commit, message format: `type(scope): description`
 
-**Planning Lock**: No implementation code until SPEC.md contains "Status: FINALIZED".
+**Planning Lock**: No implementation code until SPEC.md contains "Status:
+FINALIZED".
 
 ---
 
 ## Proof Requirements
 
-Every change requires verification evidence. For v1.0.0, verification should be performed inside the **GSD Sandbox** (Docker).
+Every change requires verification evidence. For v1.0.0, verification should be
+performed inside the **GSD Sandbox** (Docker).
 
 | Change Type   | Required Proof                 |
 | ------------- | ------------------------------ |
@@ -32,9 +34,11 @@ Every change requires verification evidence. For v1.0.0, verification should be 
 | Test          | Test runner output (Sandbox)   |
 | Config        | Verification command (Sandbox) |
 
-**Never accept**: "It looks correct", "This should work", "I've done similar before".
+**Never accept**: "It looks correct", "This should work", "I've done similar
+before".
 
-**Always require**: Captured output from `gsd_sandbox`, screenshot, or test result.
+**Always require**: Captured output from `gsd_sandbox`, screenshot, or test
+result.
 
 ---
 
@@ -52,7 +56,8 @@ Every change requires verification evidence. For v1.0.0, verification should be 
 - Faster understanding of large codebases
 - Prevents reading irrelevant code
 
-**Anti-pattern**: Reading entire files "to understand the context" without searching first.
+**Anti-pattern**: Reading entire files "to understand the context" without
+searching first.
 
 ---
 
@@ -112,7 +117,8 @@ At the end of each wave or significant work block, create a state snapshot:
 
 ## Model Independence
 
-**Absolute Rule**: No rule, workflow, or skill may require a specific model provider.
+**Absolute Rule**: No rule, workflow, or skill may require a specific model
+provider.
 
 **Allowed:**
 
@@ -128,7 +134,7 @@ At the end of each wave or significant work block, create a state snapshot:
 
 **Adapter Pattern:**
 
-```
+```text
 adapters/
 ├── CLAUDE.md    # Optional Claude enhancements
 ├── GEMINI.md    # Optional Gemini enhancements
@@ -137,7 +143,8 @@ adapters/
 
 Each adapter must begin with:
 
-> "Everything in this file is optional. For canonical rules, see PROJECT_RULES.md."
+> "Everything in this file is optional. For canonical rules, see
+> PROJECT_RULES.md."
 
 ---
 
@@ -145,7 +152,7 @@ Each adapter must begin with:
 
 **Format:**
 
-```
+```text
 type(scope): description
 ```
 
@@ -170,7 +177,7 @@ type(scope): description
 
 ## Repository Structure
 
-```
+```text
 PROJECT_RULES.md          # ← This file (canonical rules)
 GSD-STYLE.md              # Style and conventions
 
@@ -217,7 +224,8 @@ scripts/                  # Utility scripts
 
 ### `/plan` (Requirement Decomposition)
 
-Analyze requirements and write a detailed `SPEC.md`. Break work into atomic, executable phases. Update `STATE.md`.
+Analyze requirements and write a detailed `SPEC.md`. Break work into atomic,
+executable phases. Update `STATE.md`.
 
 ### `/execute` (Atomic Implementation)
 
@@ -231,7 +239,8 @@ Implement _only_ the current phase from `STATE.md`. No scope creep.
 
 ### `/map` (AST & Dependency Graphing)
 
-Trace actual imports/exports. Generate a Mermaid.js graph in `ARCHITECTURE.md`. Only read files connected on the graph.
+Trace actual imports/exports. Generate a Mermaid.js graph in `ARCHITECTURE.md`.
+Only read files connected on the graph.
 
 ### `/sync` (Human-AI Reconciliation)
 
@@ -241,16 +250,18 @@ Trace actual imports/exports. Generate a Mermaid.js graph in `ARCHITECTURE.md`. 
 
 ### `/escalate` (Anti-Hallucination Protocol)
 
-**Trigger**: `/verify` fails 3 times OR user types `/escalate`.
-Rule: Stop coding. No apologies.
+**Trigger**: `/verify` fails 3 times OR user types `/escalate`. Rule: Stop
+coding. No apologies.
 
 1. Mark phase `[BLOCKED]` in `STATE.md`.
-2. Generate `ESCALATION_REPORT.md` (Goal, Approaches, Errors, Hypothesis, Required Persona).
+2. Generate `ESCALATION_REPORT.md` (Goal, Approaches, Errors, Hypothesis,
+   Required Persona).
 3. Provide handoff prompt for a fresh session.
 
 ### `/handoff` (Context Compression)
 
-Compress working context into `HANDOFF.yaml`. Detail phase, achieved objectives, files modified, and next steps.
+Compress working context into `HANDOFF.yaml`. Detail phase, achieved objectives,
+files modified, and next steps.
 
 ---
 
@@ -274,7 +285,7 @@ Compress working context into `HANDOFF.yaml`. Detail phase, achieved objectives,
 
 ## Quick Reference (v1.0.0)
 
-```
+```text
 Before coding    → SPEC.md must be FINALIZED
 Before file read → Search first, then targeted read
 After each task  → Commit + update STATE.md
@@ -286,5 +297,5 @@ Persona switch   → /handoff (Generate HANDOFF.yaml)
 
 ---
 
-_GSD Methodology — Model-Agnostic Edition_
-_Reference implementation for multi-LLM environments_
+_GSD Methodology — Model-Agnostic Edition_ _Reference implementation for
+multi-LLM environments_

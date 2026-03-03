@@ -1,7 +1,7 @@
 # Claude Adapter
 
-> **Everything in this file is optional.**
-> For canonical rules, see [PROJECT_RULES.md](../PROJECT_RULES.md).
+> **Everything in this file is optional.** For canonical rules, see
+> [PROJECT_RULES.md](../PROJECT_RULES.md).
 
 This adapter provides optional enhancements for Claude models in Antigravity.
 
@@ -48,10 +48,12 @@ When artifacts are supported:
 
 Claude-specific context tips:
 
-1. **System prompt loading**: Core rules in system prompt, task details in user message
+1. **System prompt loading**: Core rules in system prompt, task details in user
+   message
 2. **XML structure**: Claude parses XML well — use task XML format from
    GSD-STYLE.md
-3. **Conversation history**: Minimal history preferred; use STATE.md for continuity
+3. **Conversation history**: Minimal history preferred; use STATE.md for
+   continuity
 
 ---
 
@@ -69,9 +71,9 @@ Not required, but if organizing Claude-specific files:
 
 ## Anti-Patterns
 
-❌ **Using max effort for everything** — Slow and expensive
-❌ **Skipping verification** — Thinking mode doesn't guarantee correctness
-❌ **Depending on artifacts** — Not all Claude interfaces support them
+❌ **Using max effort for everything** — Slow and expensive ❌ **Skipping
+verification** — Thinking mode doesn't guarantee correctness ❌ **Depending on
+artifacts** — Not all Claude interfaces support them
 
 ---
 

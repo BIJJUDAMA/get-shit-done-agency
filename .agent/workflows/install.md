@@ -50,8 +50,7 @@ If you want to update instead: /update
 ───────────────────────────────────────────────────────
 ```
 
-If user chooses Cancel, exit.
-If user chooses Reinstall, continue to Step 2.
+If user chooses Cancel, exit. If user chooses Reinstall, continue to Step 2.
 
 ---
 

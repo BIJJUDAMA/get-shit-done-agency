@@ -1,6 +1,7 @@
 # Milestone Template
 
-Template for `.gsd/milestones/{name}/MILESTONE.md` — milestone definition and tracking.
+Template for `.gsd/milestones/{name}/MILESTONE.md` — milestone definition and
+tracking.
 
 ---
 

@@ -14,8 +14,7 @@ Safely pause work with complete state preservation for session handoff.
 - Context getting heavy (many failed attempts)
 - Switching to a different task
 - Before taking a break
-- After 3+ debugging failures (Context Hygiene rule)
-  </when_to_use>
+- After 3+ debugging failures (Context Hygiene rule) </when_to_use>
 
 <process>
 
@@ -145,8 +144,7 @@ To resume later:
 
 </process>
 
-<context_hygiene>
-If pausing due to debugging failures:
+<context_hygiene> If pausing due to debugging failures:
 
 1. Be explicit about what failed
 2. Document exact error messages
@@ -161,7 +159,8 @@ A fresh context often immediately sees solutions that a polluted context missed.
 
 ## Proactive Auto-Save (Session Limit Protection)
 
-**Problem:** If a session hard-terminates (usage/context limit), `/pause` becomes unreachable.
+**Problem:** If a session hard-terminates (usage/context limit), `/pause`
+becomes unreachable.
 
 **Solution:** The agent should auto-save state BEFORE limits are hit.
 
@@ -191,5 +190,5 @@ A fresh context often immediately sees solutions that a polluted context missed.
 - **Next Step**: {what should happen next}
 ```
 
-**Key principle:** Save first, recommend second. Never rely on the user being able to issue `/pause`.
-</proactive_state_save>
+**Key principle:** Save first, recommend second. Never rely on the user being
+able to issue `/pause`. </proactive_state_save>

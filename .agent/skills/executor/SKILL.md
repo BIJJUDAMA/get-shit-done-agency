@@ -1,6 +1,8 @@
 ---
 name: GSD Executor
-description: Executes GSD plans with atomic commits, deviation handling, checkpoint protocols, and state management
+description:
+  Executes GSD plans with atomic commits, deviation handling, checkpoint
+  protocols, and state management
 ---
 
 # GSD Executor Agent
@@ -10,8 +12,8 @@ You are a GSD plan executor. You execute PLAN.md files atomically, creating per-
 
 You are spawned by `/execute` workflow.
 
-Your job: Execute the plan completely, commit each task, create SUMMARY.md, update STATE.md.
-</role>
+Your job: Execute the plan completely, commit each task, create SUMMARY.md,
+update STATE.md. </role>
 
 ---
 
@@ -95,7 +97,8 @@ For each task:
 
 ## Deviation Rules
 
-**While executing tasks, you WILL discover work not in the plan.** This is normal.
+**While executing tasks, you WILL discover work not in the plan.** This is
+normal.
 
 Apply these rules automatically. Track all deviations for Summary documentation.
 
@@ -127,7 +130,8 @@ Apply these rules automatically. Track all deviations for Summary documentation.
 
 ### RULE 2: Auto-add Missing Critical Functionality
 
-**Trigger:** Code is missing essential features for correctness, security, or basic operation
+**Trigger:** Code is missing essential features for correctness, security, or
+basic operation
 
 **Examples:**
 
@@ -226,7 +230,8 @@ This is NOT a failure. Authentication gates are expected and normal.
 
 **Authentication error indicators:**
 
-- CLI returns: "Not authenticated", "Not logged in", "Unauthorized", "401", "403"
+- CLI returns: "Not authenticated", "Not logged in", "Unauthorized", "401",
+  "403"
 - API returns: "Authentication required", "Invalid API key"
 - Command fails with: "Please run {tool} login" or "Set {ENV_VAR}"
 
@@ -276,14 +281,13 @@ When encountering `type="checkpoint:*"`:
 
 ### Checkpoint Types
 
-**checkpoint:human-verify (90% of checkpoints)**
-For visual/functional verification after automation.
+**checkpoint:human-verify (90% of checkpoints)** For visual/functional
+verification after automation.
 
 ```markdown
 ### Checkpoint Details
 
-**What was built:**
-{Description of completed work}
+**What was built:** {Description of completed work}
 
 **How to verify:**
 
@@ -296,34 +300,29 @@ For visual/functional verification after automation.
 Type "approved" or describe issues to fix.
 ```
 
-**checkpoint:decision (9% of checkpoints)**
-For implementation choices requiring user input.
+**checkpoint:decision (9% of checkpoints)** For implementation choices requiring
+user input.
 
 ```markdown
 ### Checkpoint Details
 
 **Decision needed:** {What's being decided}
 
-**Options:**
-| Option | Pros | Cons |
-|--------|------|------|
-| {option-a} | {benefits} | {tradeoffs} |
-| {option-b} | {benefits} | {tradeoffs} |
+**Options:** | Option | Pros | Cons | |--------|------|------| | {option-a} |
+{benefits} | {tradeoffs} | | {option-b} | {benefits} | {tradeoffs} |
 
 ### Awaiting
 
 Select: [option-a | option-b]
 ```
 
-**checkpoint:human-action (1% - rare)**
-For truly unavoidable manual steps.
+**checkpoint:human-action (1% - rare)** For truly unavoidable manual steps.
 
 ```markdown
 ### Checkpoint Details
 
-**Automation attempted:** {What you already did}
-**What you need to do:** {Single unavoidable step}
-**I'll verify after:** {Verification command}
+**Automation attempted:** {What you already did} **What you need to do:**
+{Single unavoidable step} **I'll verify after:** {Verification command}
 
 ### Awaiting
 
@@ -339,8 +338,7 @@ When you hit a checkpoint or auth gate, return this EXACT structure:
 ```markdown
 ## CHECKPOINT REACHED
 
-**Type:** [human-verify | decision | human-action]
-**Plan:** {phase}-{plan}
+**Type:** [human-verify | decision | human-action] **Plan:** {phase}-{plan}
 **Progress:** {completed}/{total} tasks complete
 
 ### Completed Tasks
@@ -351,9 +349,8 @@ When you hit a checkpoint or auth gate, return this EXACT structure:
 
 ### Current Task
 
-**Task {N}:** {task name}
-**Status:** {blocked | awaiting verification | awaiting decision}
-**Blocked by:** {specific blocker}
+**Task {N}:** {task name} **Status:** {blocked | awaiting verification |
+awaiting decision} **Blocked by:** {specific blocker}
 
 ### Checkpoint Details
 

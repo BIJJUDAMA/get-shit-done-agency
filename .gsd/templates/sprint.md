@@ -1,7 +1,6 @@
 # Sprint {N} — {Sprint Name}
 
-> **Duration**: YYYY-MM-DD to YYYY-MM-DD
-> **Status**: In Progress | Complete
+> **Duration**: YYYY-MM-DD to YYYY-MM-DD **Status**: In Progress | Complete
 
 ## Goal
 

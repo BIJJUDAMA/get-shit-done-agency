@@ -19,8 +19,7 @@ type: user-setup
 
 This plan requires manual setup that the AI cannot perform.
 
-**Time estimate:** {X minutes}
-**Blocking:** Plan cannot proceed until complete
+**Time estimate:** {X minutes} **Blocking:** Plan cannot proceed until complete
 
 ---
 
@@ -70,7 +69,7 @@ This plan requires manual setup that the AI cannot perform.
 
 **Environment variables:**
 
-```
+```text
 {VAR_1}=value
 {VAR_2}=value
 ```
@@ -102,7 +101,7 @@ Before continuing, verify:
 
 Type "done" or "setup complete" to continue with execution.
 
-```
+```text
 
 ---
 

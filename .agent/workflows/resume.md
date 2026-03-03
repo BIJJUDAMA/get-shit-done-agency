@@ -122,13 +122,12 @@ Time to solve this with fresh eyes.
 
 </process>
 
-<fresh_context_advantage>
-A resumed session has advantages:
+<fresh_context_advantage> A resumed session has advantages:
 
 1. **No accumulated confusion** — You see the problem clearly
 2. **Documented failures** — You know what NOT to try
 3. **Hypothesis preserved** — Pick up where logic left off
 4. **Full context budget** — 200k tokens of fresh capacity
 
-Often the first thing a fresh context sees is the obvious solution that a tired context missed.
-</fresh_context_advantage>
+Often the first thing a fresh context sees is the obvious solution that a tired
+context missed. </fresh_context_advantage>

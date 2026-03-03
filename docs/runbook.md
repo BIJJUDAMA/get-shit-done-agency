@@ -304,5 +304,5 @@ git diff --staged
 
 ---
 
-_See PROJECT_RULES.md for canonical rules._
-_See docs/model-selection-playbook.md for model guidance._
+_See PROJECT_RULES.md for canonical rules._ _See
+docs/model-selection-playbook.md for model guidance._

@@ -1,7 +1,6 @@
 # Phase {N} Summary
 
-> **Status**: Complete
-> **Completed**: YYYY-MM-DD
+> **Status**: Complete **Completed**: YYYY-MM-DD
 
 ## Objective
 

@@ -7,8 +7,7 @@
 ```markdown
 ## [DECISION-XXX] Title
 
-**Date**: YYYY-MM-DD
-**Status**: Proposed | Accepted | Deprecated | Superseded
+**Date**: YYYY-MM-DD **Status**: Proposed | Accepted | Deprecated | Superseded
 
 ### Context
 

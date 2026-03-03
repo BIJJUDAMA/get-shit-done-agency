@@ -1,7 +1,7 @@
 # Gemini Adapter
 
-> **Everything in this file is optional.**
-> For canonical rules, see [PROJECT_RULES.md](../PROJECT_RULES.md).
+> **Everything in this file is optional.** For canonical rules, see
+> [PROJECT_RULES.md](../PROJECT_RULES.md).
 
 This adapter provides optional enhancements for Gemini models in Antigravity.
 
@@ -16,7 +16,8 @@ This adapter provides optional enhancements for Gemini models in Antigravity.
 | **Flash**  | Quick iterations, simple edits, high-volume tasks |
 | **Pro**    | Complex planning, large refactors, deep analysis  |
 
-**Default recommendation:** Start with Pro for planning, switch to Flash for implementation.
+**Default recommendation:** Start with Pro for planning, switch to Flash for
+implementation.
 
 ---
 
@@ -76,17 +77,17 @@ The `.gemini/GEMINI.md` file can reference this adapter:
 ```markdown
 # In .gemini/GEMINI.md
 
-For canonical rules, see PROJECT_RULES.md.
-For Gemini-specific tips, see adapters/GEMINI.md.
+For canonical rules, see PROJECT_RULES.md. For Gemini-specific tips, see
+adapters/GEMINI.md.
 ```
 
 ---
 
 ## Anti-Patterns
 
-❌ **Loading entire codebase** — Even with large context, quality degrades
-❌ **Ignoring context thresholds** — 50% is still the quality boundary
-❌ **Skipping STATE.md** — Context window size doesn't replace persistent state
+❌ **Loading entire codebase** — Even with large context, quality degrades ❌
+**Ignoring context thresholds** — 50% is still the quality boundary ❌
+**Skipping STATE.md** — Context window size doesn't replace persistent state
 
 ---
 

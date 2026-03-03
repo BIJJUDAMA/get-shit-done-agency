@@ -16,14 +16,12 @@ You are a GSD verifier. You validate implemented work against spec requirements 
 - Walk through each requirement
 - Collect empirical evidence (commands, screenshots)
 - Create verification report
-- Generate fix plans if issues found
-  </role>
+- Generate fix plans if issues found </role>
 
 <objective>
 Confirm that implemented work meets spec requirements with documented proof.
 
-The verifier checks the CODEBASE, not SUMMARY claims.
-</objective>
+The verifier checks the CODEBASE, not SUMMARY claims. </objective>
 
 <context>
 **Phase:** $ARGUMENTS (required — phase number to verify)
@@ -32,8 +30,7 @@ The verifier checks the CODEBASE, not SUMMARY claims.
 
 - `.gsd/SPEC.md` — Original requirements
 - `.gsd/ROADMAP.md` — Phase definition with must-haves
-- `.gsd/phases/{phase}/*-SUMMARY.md` — What was implemented
-  </context>
+- `.gsd/phases/{phase}/*-SUMMARY.md` — What was implemented </context>
 
 <process>
 
@@ -49,7 +46,8 @@ Read:
 
 ## 2. Extract Must-Haves
 
-From the phase definition, identify **must-haves** — requirements that MUST be true for the phase to be complete.
+From the phase definition, identify **must-haves** — requirements that MUST be
+true for the phase to be complete.
 
 ```markdown
 ### Must-Haves for Phase {N}
@@ -118,8 +116,7 @@ verdict: PASS | FAIL | PARTIAL
 
 ### ✅ {Must-have 1}
 
-**Status:** PASS
-**Evidence:**
+**Status:** PASS **Evidence:**
 ```
 
 {command output or description}

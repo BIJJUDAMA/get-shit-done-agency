@@ -16,8 +16,7 @@ Search the web to gather information for technical decisions, API documentation,
 - Checking current best practices
 - Researching error messages
 - Comparing implementation approaches
-- Getting up-to-date information on tools/services
-  </when_to_use>
+- Getting up-to-date information on tools/services </when_to_use>
 
 <process>
 
@@ -104,14 +103,13 @@ Based on findings:
 <integration>
 ## Integration with GSD
 
-**During /research-phase:**
-Use `/web-search` to gather information for RESEARCH.md.
+**During /research-phase:** Use `/web-search` to gather information for
+RESEARCH.md.
 
-**During /plan:**
-Use `/web-search` when discovery level 1-3 indicates research needed.
+**During /plan:** Use `/web-search` when discovery level 1-3 indicates research
+needed.
 
-**During /debug:**
-Use `/web-search` to find solutions to error messages.
+**During /debug:** Use `/web-search` to find solutions to error messages.
 </integration>
 
 <related>

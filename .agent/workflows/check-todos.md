@@ -16,8 +16,7 @@ Display pending todo items, optionally filtered by priority or status.
 
 **Input:**
 
-- `.gsd/TODO.md` — Todo items
-  </context>
+- `.gsd/TODO.md` — Todo items </context>
 
 <process>
 
@@ -72,11 +71,5 @@ COMPLETED ({M} items)
 
 </process>
 
-<priority_indicators>
-| Priority | Indicator |
-|----------|-----------|
-| high | 🔴 |
-| medium | 🟡 |
-| low | 🟢 |
-| done | ✅ |
-</priority_indicators>
+<priority_indicators> | Priority | Indicator | |----------|-----------| | high |
+🔴 | | medium | 🟡 | | low | 🟢 | | done | ✅ | </priority_indicators>

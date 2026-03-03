@@ -186,8 +186,7 @@ Updated to version {remote-version}
 
 </process>
 
-<preserved_files>
-These user files are NEVER overwritten:
+<preserved_files> These user files are NEVER overwritten:
 
 - .gsd/SPEC.md
 - .gsd/ROADMAP.md
@@ -198,5 +197,4 @@ These user files are NEVER overwritten:
 - .gsd/JOURNAL.md
 - .gsd/TODO.md
 - .gsd/phases/\*
-- .gemini/GEMINI.md
-  </preserved_files>
+- .gemini/GEMINI.md </preserved_files>

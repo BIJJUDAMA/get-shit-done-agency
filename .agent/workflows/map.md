@@ -1,5 +1,6 @@
 ---
-description: The Architect — Analyze codebase and update ARCHITECTURE.md and STACK.md
+description:
+  The Architect — Analyze codebase and update ARCHITECTURE.md and STACK.md
 ---
 
 # /map Workflow
@@ -13,14 +14,13 @@ You are a GSD codebase mapper. You analyze existing codebases to understand stru
 - Analyze dependencies and versions
 - Map data flow and integration points
 - Identify technical debt and patterns
-- Document findings for planning context
-  </role>
+- Document findings for planning context </role>
 
 <objective>
 Analyze the existing codebase and produce documentation that enables informed planning.
 
-This workflow should be run BEFORE `/plan` on brownfield projects to give the planner full context.
-</objective>
+This workflow should be run BEFORE `/plan` on brownfield projects to give the
+planner full context. </objective>
 
 <context>
 **No arguments required.** Operates on current project directory.
@@ -28,8 +28,7 @@ This workflow should be run BEFORE `/plan` on brownfield projects to give the pl
 **Outputs:**
 
 - `.gsd/ARCHITECTURE.md` — System design documentation
-- `.gsd/STACK.md` — Technology inventory
-  </context>
+- `.gsd/STACK.md` — Technology inventory </context>
 
 <process>
 
@@ -92,8 +91,7 @@ Identify:
 
 ### 2b. Entry Points
 
-Find main files:
-**PowerShell:**
+Find main files: **PowerShell:**
 
 ```powershell
 # Example for Node.js
@@ -166,8 +164,7 @@ pip list --outdated
 
 ### 4a. External Integrations
 
-Search for:
-**PowerShell:**
+Search for: **PowerShell:**
 
 ```powershell
 # API calls
@@ -206,8 +203,7 @@ Trace how data moves:
 
 ### 5a. Code Smells
 
-Search for indicators:
-**PowerShell:**
+Search for indicators: **PowerShell:**
 
 ```powershell
 # TODOs and FIXMEs
@@ -258,12 +254,9 @@ Identify gaps:
 {High-level description of what this system does}
 ```
 
-┌─────────────────────────────────────────┐
-│ [Entry Point] │
-├─────────────────────────────────────────┤
-│ [Business Logic Layer] │
-├─────────────────────────────────────────┤
-│ [Data Layer] │
+┌─────────────────────────────────────────┐ │ [Entry Point] │
+├─────────────────────────────────────────┤ │ [Business Logic Layer] │
+├─────────────────────────────────────────┤ │ [Data Layer] │
 └─────────────────────────────────────────┘
 
 ```

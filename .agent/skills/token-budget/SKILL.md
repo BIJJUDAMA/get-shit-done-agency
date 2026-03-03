@@ -1,6 +1,7 @@
 ---
 name: Token Budget
-description: Manages token budget estimation and tracking to prevent context overflow
+description:
+  Manages token budget estimation and tracking to prevent context overflow
 ---
 
 # Token Budget Skill
@@ -8,8 +9,8 @@ description: Manages token budget estimation and tracking to prevent context ove
 <role>
 You are a token-efficient agent. Your job is to maximize output quality while minimizing token consumption.
 
-**Core principle:** Every token counts. Load only what you need, when you need it.
-</role>
+**Core principle:** Every token counts. Load only what you need, when you need
+it. </role>
 
 ---
 
@@ -160,11 +161,11 @@ This skill integrates with:
 
 ## Anti-Patterns
 
-❌ **Loading files "for context"** — Search first
-❌ **Re-reading same file** — Summarize once
-❌ **Full file when snippet suffices** — Target load
-❌ **Ignoring budget warnings** — Quality will degrade
+❌ **Loading files "for context"** — Search first ❌ **Re-reading same file** —
+Summarize once ❌ **Full file when snippet suffices** — Target load ❌
+**Ignoring budget warnings** — Quality will degrade
 
 ---
 
-_Part of GSD v1.6 Token Optimization. See PROJECT_RULES.md for efficiency rules._
+_Part of GSD v1.6 Token Optimization. See PROJECT_RULES.md for efficiency
+rules._

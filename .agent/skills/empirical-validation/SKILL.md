@@ -1,6 +1,7 @@
 ---
 name: Empirical Validation
-description: Requires proof before marking work complete — no "trust me, it works"
+description:
+  Requires proof before marking work complete — no "trust me, it works"
 ---
 
 # Empirical Validation
@@ -9,7 +10,8 @@ description: Requires proof before marking work complete — no "trust me, it wo
 
 > **"The code looks correct" is NOT validation.**
 >
-> Every change must be verified with empirical evidence before being marked complete.
+> Every change must be verified with empirical evidence before being marked
+> complete.
 
 ## Validation Methods by Change Type
 

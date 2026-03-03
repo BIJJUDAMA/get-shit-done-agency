@@ -15,10 +15,8 @@ updated: [ISO timestamp]
 
 ## Current Position
 
-**Milestone:** {name}
-**Phase:** {N} - {name}
-**Status:** {planning | executing | verifying | blocked}
-**Plan:** {current plan if executing}
+**Milestone:** {name} **Phase:** {N} - {name} **Status:** {planning | executing
+| verifying | blocked} **Plan:** {current plan if executing}
 
 ## Last Action
 

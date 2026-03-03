@@ -37,8 +37,7 @@ Add new phase to ROADMAP.md:
 ```markdown
 ### Phase {N}: Gap Closure
 
-**Status**: ⬜ Not Started
-**Objective**: Address gaps from milestone audit
+**Status**: ⬜ Not Started **Objective**: Address gaps from milestone audit
 
 **Gaps to Close:**
 

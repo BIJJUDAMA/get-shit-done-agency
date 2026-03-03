@@ -19,7 +19,7 @@
 
 ## The Token Efficiency Stack
 
-```
+```text
 ┌─────────────────────────────────────┐
 │ 1. Search-First (context-fetch)    │ ← Find before loading
 ├─────────────────────────────────────┤
@@ -59,7 +59,7 @@
 
 ### Pattern 1: Search → Outline → Target
 
-```
+```text
 Step 1: Search for "handlePayment"
   → Found in: payment.ts:45, checkout.ts:120
 
@@ -73,7 +73,7 @@ Step 3: Load only L45-80
 
 ### Pattern 2: Summarize After Understanding
 
-```
+```text
 After reading auth.ts:
 
 ## Summary: auth.ts
@@ -87,7 +87,7 @@ Next time: Reference summary, don't reload
 
 ### Pattern 3: Progressive Disclosure
 
-```
+```text
 Need: Understand login flow
 
 Level 1: Outline
@@ -112,7 +112,7 @@ Level 4: Full file
 
 ### ❌ The "Context Dump"
 
-```
+```text
 BAD:
 "Let me read all the files in src/ to understand the project"
 → 50 files × 200 lines × 4 tokens = 40,000 tokens
@@ -124,7 +124,7 @@ GOOD:
 
 ### ❌ The "Just In Case" Load
 
-```
+```text
 BAD:
 "Loading utils.ts in case I need it later"
 → Probably won't need it, wasted tokens
@@ -136,7 +136,7 @@ GOOD:
 
 ### ❌ The Re-Read
 
-```
+```text
 BAD:
 "Reading config.ts again to check the port"
 → Already read it twice = 1200 tokens
@@ -153,25 +153,22 @@ GOOD:
 ### Before Starting Work
 
 ```markdown
-□ Do I know my current budget usage?
-□ Have I tried searching before loading?
-□ Am I loading files I've already understood?
+□ Do I know my current budget usage? □ Have I tried searching before loading? □
+Am I loading files I've already understood?
 ```
 
 ### During Execution
 
 ```markdown
-□ Am I at >50%? Time to compress.
-□ Am I re-reading files? Use summaries.
-□ Can I use outline instead of full file?
+□ Am I at >50%? Time to compress. □ Am I re-reading files? Use summaries. □ Can
+I use outline instead of full file?
 ```
 
 ### After Each Wave
 
-```markdown
-□ Have I compressed context for next wave?
-□ Are summaries documented in STATE.md?
-□ Would a fresh session be more efficient?
+```text
+□ Have I compressed context for next wave? □ Are summaries documented in
+STATE.md? □ Would a fresh session be more efficient?
 ```
 
 ---

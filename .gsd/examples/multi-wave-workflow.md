@@ -105,13 +105,13 @@ Files to read: src/app/api/ structure, existing auth if any
 
 **Task 1 Commit:**
 
-```
+```text
 git commit -m "feat(phase-1): create login endpoint"
 ```
 
 **Task 2 Commit:**
 
-```
+```text
 git commit -m "feat(phase-1): create logout endpoint"
 ```
 
@@ -223,7 +223,7 @@ JWT is stored in httpOnly cookie named "token".
 
 **Commits:**
 
-```
+```text
 git commit -m "feat(phase-1): create auth middleware"
 git commit -m "feat(phase-1): apply middleware to profile route"
 ```
@@ -265,5 +265,5 @@ curl -X POST localhost:3000/api/auth/logout -b cookies.txt
 
 ---
 
-_See PROJECT_RULES.md for wave execution rules._
-_See templates/state_snapshot.md for snapshot format._
+_See PROJECT_RULES.md for wave execution rules._ _See
+templates/state_snapshot.md for snapshot format._

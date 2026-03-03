@@ -1,6 +1,7 @@
 # Requirements Template
 
-Template for `.gsd/REQUIREMENTS.md` — formal requirements tracking with traceability.
+Template for `.gsd/REQUIREMENTS.md` — formal requirements tracking with
+traceability.
 
 ---
 

@@ -1,13 +1,15 @@
 ---
 name: Context Health Monitor
-description: Monitors context complexity and triggers state dumps before quality degrades
+description:
+  Monitors context complexity and triggers state dumps before quality degrades
 ---
 
 # Context Health Monitor
 
 ## Purpose
 
-Prevent "Context Rot" — the quality degradation that occurs as the agent processes more information in a single session.
+Prevent "Context Rot" — the quality degradation that occurs as the agent
+processes more information in a single session.
 
 ## When This Skill Activates
 
@@ -63,8 +65,7 @@ When triggered, write to `.gsd/STATE.md`:
 ```markdown
 ## Context Health: State Dump
 
-**Triggered**: [date/time]
-**Reason**: [3 failures / circular / uncertainty]
+**Triggered**: [date/time] **Reason**: [3 failures / circular / uncertainty]
 
 ### What Was Attempted
 
@@ -89,17 +90,22 @@ When triggered, write to `.gsd/STATE.md`:
 
 ## Auto-Save Protocol
 
-**Critical:** When any warning signal triggers, the agent must save state BEFORE recommending `/pause` to the user. This ensures state persists even if the session hard-terminates.
+**Critical:** When any warning signal triggers, the agent must save state BEFORE
+recommending `/pause` to the user. This ensures state persists even if the
+session hard-terminates.
 
 ### Steps
 
-1. **Write** a state snapshot to `.gsd/STATE.md` immediately when a threshold is hit
+1. **Write** a state snapshot to `.gsd/STATE.md` immediately when a threshold is
+   hit
 2. **Include** at minimum: current phase, current task, last action, next step
 3. **Then** inform the user of the situation and recommend `/pause`
 
 ### Why
 
-Sessions can terminate abruptly (usage limits, context limits, network errors). If the agent waits for the user to type `/pause`, it may never get the chance. By saving first and recommending second, state is always preserved.
+Sessions can terminate abruptly (usage limits, context limits, network errors).
+If the agent waits for the user to type `/pause`, it may never get the chance.
+By saving first and recommending second, state is always preserved.
 
 ## Integration
 

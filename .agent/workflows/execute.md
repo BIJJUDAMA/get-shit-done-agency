@@ -14,13 +14,13 @@ You are a GSD executor orchestrator. You manage wave-based parallel execution of
 - Discover and group plans by execution wave
 - Spawn focused execution for each plan
 - Verify phase goal after all plans complete
-- Update roadmap and state on completion
-  </role>
+- Update roadmap and state on completion </role>
 
 <objective>
 Execute all plans in a phase using wave-based parallel execution.
 
-Orchestrator stays lean: discover plans, analyze dependencies, group into waves, execute sequentially within waves, verify against phase goal.
+Orchestrator stays lean: discover plans, analyze dependencies, group into waves,
+execute sequentially within waves, verify against phase goal.
 
 **Context budget:** ~15% orchestrator, fresh context per plan execution.
 </objective>
@@ -30,14 +30,14 @@ Orchestrator stays lean: discover plans, analyze dependencies, group into waves,
 
 **Flags:**
 
-- `--gaps-only` — Execute only gap closure plans (created by `/verify` when issues found)
+- `--gaps-only` — Execute only gap closure plans (created by `/verify` when
+  issues found)
 
 **Required files:**
 
 - `.gsd/ROADMAP.md` — Phase definitions
 - `.gsd/STATE.md` — Current position
-- `.gsd/phases/{phase}/` — Phase directory with PLAN.md files
-  </context>
+- `.gsd/phases/{phase}/` — Phase directory with PLAN.md files </context>
 
 <process>
 
@@ -131,7 +131,8 @@ ls "$PHASE_DIR"/*-SUMMARY.md 2>/dev/null
 
 **Build list of incomplete plans** (PLAN without matching SUMMARY).
 
-**If `--gaps-only`:** Filter to only plans with `gap_closure: true` in frontmatter.
+**If `--gaps-only`:** Filter to only plans with `gap_closure: true` in
+frontmatter.
 
 **If no incomplete plans found:** Phase already complete, skip to step 8.
 
@@ -265,8 +266,7 @@ git commit -m "docs(phase-{N}): complete {phase-name}"
 
 </process>
 
-<offer_next>
-Output based on status:
+<offer_next> Output based on status:
 
 **Route A: Phase complete, more phases remain**
 
@@ -318,13 +318,11 @@ Gap closure plans created.
 
 </offer_next>
 
-<context_hygiene>
-**After 3 failed debugging attempts:**
+<context_hygiene> **After 3 failed debugging attempts:**
 
 1. Stop current approach
 2. Document to `.gsd/STATE.md` what was tried
-3. Recommend `/pause` for fresh session
-   </context_hygiene>
+3. Recommend `/pause` for fresh session </context_hygiene>
 
 <related>
 ## Related

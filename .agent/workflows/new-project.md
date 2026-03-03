@@ -7,7 +7,9 @@ description: Initialize a new project with deep context gathering
 <objective>
 Initialize a new project through unified flow: questioning → research (optional) → requirements → roadmap.
 
-This is the most leveraged moment in any project. Deep questioning here means better plans, better execution, better outcomes. One command takes you from idea to ready-for-planning.
+This is the most leveraged moment in any project. Deep questioning here means
+better plans, better execution, better outcomes. One command takes you from idea
+to ready-for-planning.
 
 **Creates:**
 
@@ -17,8 +19,7 @@ This is the most leveraged moment in any project. Deep questioning here means be
 - `.gsd/ARCHITECTURE.md` — system design (if brownfield)
 - All other .gsd/ documentation files
 
-**After this command:** Run `/plan 1` to start execution.
-</objective>
+**After this command:** Run `/plan 1` to start execution. </objective>
 
 <process>
 
@@ -115,8 +116,8 @@ Run `/map` first, then return to `/new-project`
 
 Exit command.
 
-**If "Skip mapping":** Continue to Phase 3.
-**If no existing code detected OR codebase already mapped:** Continue to Phase 3.
+**If "Skip mapping":** Continue to Phase 3. **If no existing code detected OR
+codebase already mapped:** Continue to Phase 3.
 
 ---
 
@@ -174,7 +175,8 @@ A) Create SPEC.md — Let's move forward
 B) Keep exploring — I want to share more
 ```
 
-If "Keep exploring" — ask what they want to add, or identify gaps and probe naturally.
+If "Keep exploring" — ask what they want to add, or identify gaps and probe
+naturally.
 
 Loop until "Create SPEC.md" selected.
 
@@ -277,8 +279,7 @@ Create `.gsd/ROADMAP.md`:
 ```markdown
 # ROADMAP.md
 
-> **Current Phase**: Not started
-> **Milestone**: v1.0
+> **Current Phase**: Not started **Milestone**: v1.0
 
 ## Must-Haves (from SPEC)
 
@@ -289,25 +290,21 @@ Create `.gsd/ROADMAP.md`:
 
 ### Phase 1: {Foundation}
 
-**Status**: ⬜ Not Started
-**Objective**: {what this delivers}
-**Requirements**: REQ-01, REQ-02
+**Status**: ⬜ Not Started **Objective**: {what this delivers} **Requirements**:
+REQ-01, REQ-02
 
 ### Phase 2: {Core Feature}
 
-**Status**: ⬜ Not Started
-**Objective**: {what this delivers}
-**Requirements**: REQ-03
+**Status**: ⬜ Not Started **Objective**: {what this delivers} **Requirements**:
+REQ-03
 
 ### Phase 3: {Integration}
 
-**Status**: ⬜ Not Started
-**Objective**: {what this delivers}
+**Status**: ⬜ Not Started **Objective**: {what this delivers}
 
 ### Phase 4: {Polish/Launch}
 
-**Status**: ⬜ Not Started
-**Objective**: {final touches}
+**Status**: ⬜ Not Started **Objective**: {final touches}
 ```
 
 **Phase creation rules:**
@@ -386,7 +383,8 @@ Files created:
 ## Why Deep Questioning Matters
 
 The original GSD emphasizes that `/new-project` is the most leveraged moment.
-Every minute spent understanding what to build saves hours of building the wrong thing.
+Every minute spent understanding what to build saves hours of building the wrong
+thing.
 
 **Signs questioning is done:**
 
@@ -400,5 +398,4 @@ Every minute spent understanding what to build saves hours of building the wrong
 - Vague terms remain unexplained
 - You don't know who the user is
 - Success is defined as "it works"
-- Scope keeps expanding during discussion
-  </questioning_philosophy>
+- Scope keeps expanding during discussion </questioning_philosophy>

@@ -1,5 +1,6 @@
 ---
-description: The Strategist — Decompose requirements into executable phases in ROADMAP.md
+description:
+  The Strategist — Decompose requirements into executable phases in ROADMAP.md
 argument-hint: "[phase] [--research] [--skip-research] [--gaps]"
 ---
 
@@ -14,16 +15,15 @@ You are a GSD planner orchestrator. You create executable phase plans with task 
 - Handle research (unless skipped or exists)
 - Create PLAN.md files with XML task structure
 - Verify plans with checker logic
-- Iterate until plans pass (max 3 iterations)
-  </role>
+- Iterate until plans pass (max 3 iterations) </role>
 
 <objective>
 Create executable phase prompts (PLAN.md files) for a roadmap phase with integrated research and verification.
 
 **Default flow:** Research (if needed) → Plan → Verify → Done
 
-**Why subagents:** Research and planning burn context fast. Verification uses fresh context. User sees the flow between agents in main context.
-</objective>
+**Why subagents:** Research and planning burn context fast. Verification uses
+fresh context. User sees the flow between agents in main context. </objective>
 
 <context>
 **Phase number:** $ARGUMENTS (optional — auto-detects next unplanned phase if not provided)
@@ -37,8 +37,7 @@ Create executable phase prompts (PLAN.md files) for a roadmap phase with integra
 **Required files:**
 
 - `.gsd/SPEC.md` — Must be FINALIZED (Planning Lock)
-- `.gsd/ROADMAP.md` — Must have phases defined
-  </context>
+- `.gsd/ROADMAP.md` — Must have phases defined </context>
 
 <philosophy>
 
@@ -52,8 +51,8 @@ You are planning for ONE person (the user) and ONE implementer (Claude).
 
 ## Plans Are Prompts
 
-PLAN.md is NOT a document that gets transformed into a prompt.
-PLAN.md IS the prompt. It contains:
+PLAN.md is NOT a document that gets transformed into a prompt. PLAN.md IS the
+prompt. It contains:
 
 - Objective (what and why)
 - Context (@file references)
@@ -69,7 +68,8 @@ PLAN.md IS the prompt. It contains:
 | 50-70%        | DEGRADING | Efficiency mode begins  |
 | 70%+          | POOR      | Rushed, minimal         |
 
-**The rule:** Plans should complete within ~50% context. More plans, smaller scope.
+**The rule:** Plans should complete within ~50% context. More plans, smaller
+scope.
 
 ## Aggressive Atomicity
 
@@ -167,8 +167,8 @@ Select-String -Path ".gsd/ROADMAP.md" -Pattern "Phase $PHASE:"
 grep "Phase $PHASE:" ".gsd/ROADMAP.md"
 ```
 
-**If not found:** Error with available phases.
-**If found:** Extract phase name and description.
+**If not found:** Error with available phases. **If found:** Extract phase name
+and description.
 
 ---
 
@@ -198,8 +198,7 @@ mkdir -p "$PHASE_DIR"
 
 **If `--skip-research` flag:** Skip to step 6.
 
-**Check for existing research:**
-**PowerShell:**
+**Check for existing research:** **PowerShell:**
 
 ```powershell
 Test-Path "$PHASE_DIR/RESEARCH.md"
@@ -388,7 +387,8 @@ Plans:
 | `checkpoint:human-verify` | Visual/functional verification         | Pauses for user  |
 | `checkpoint:decision`     | Implementation choices                 | Pauses for user  |
 
-**Automation-first rule:** If Claude CAN do it, Claude MUST do it. Checkpoints are for verification AFTER automation.
+**Automation-first rule:** If Claude CAN do it, Claude MUST do it. Checkpoints
+are for verification AFTER automation.
 
 </task_types>
 

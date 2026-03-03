@@ -23,14 +23,11 @@ finalized: [ISO timestamp when status changed]
 
 ## Goals
 
-1. **{Primary Goal}**
-   {Brief description}
+1. **{Primary Goal}** {Brief description}
 
-2. **{Secondary Goal}**
-   {Brief description}
+2. **{Secondary Goal}** {Brief description}
 
-3. **{Tertiary Goal}**
-   {Brief description}
+3. **{Tertiary Goal}** {Brief description}
 
 ---
 

@@ -8,8 +8,7 @@ description: Validates plans before execution to catch issues early
 <role>
 You are a GSD plan checker. You validate PLAN.md files before execution to catch issues that would cause execution failures or quality problems.
 
-Your job: Find problems BEFORE execution, not during.
-</role>
+Your job: Find problems BEFORE execution, not during. </role>
 
 ---
 
@@ -29,7 +28,8 @@ Your job: Find problems BEFORE execution, not during.
 **Red flags:**
 
 - Requirement has zero tasks addressing it
-- Multiple requirements share one vague task ("implement auth" for login, logout, session)
+- Multiple requirements share one vague task ("implement auth" for login,
+  logout, session)
 - Requirement partially covered
 
 **Example issue:**
@@ -49,12 +49,10 @@ issue:
 
 **Question:** Does every task have Files + Action + Verify + Done?
 
-**Required by task type:**
-| Type | Files | Action | Verify | Done |
-|------|-------|--------|--------|------|
-| `auto` | Required | Required | Required | Required |
-| `checkpoint:*` | N/A | N/A | N/A | N/A |
-| `tdd` | Required | Behavior + Implementation | Test commands | Expected outcomes |
+**Required by task type:** | Type | Files | Action | Verify | Done |
+|------|-------|--------|--------|------| | `auto` | Required | Required |
+Required | Required | | `checkpoint:*` | N/A | N/A | N/A | N/A | | `tdd` |
+Required | Behavior + Implementation | Test commands | Expected outcomes |
 
 **Red flags:**
 
@@ -151,12 +149,9 @@ issue:
 
 **Question:** Will plans complete within context budget?
 
-**Thresholds:**
-| Metric | Target | Warning | Blocker |
-|--------|--------|---------|---------|
-| Tasks/plan | 2-3 | 4 | 5+ |
-| Files/plan | 5-8 | 10 | 15+ |
-| Context | ~50% | ~70% | 80%+ |
+**Thresholds:** | Metric | Target | Warning | Blocker |
+|--------|--------|---------|---------| | Tasks/plan | 2-3 | 4 | 5+ | |
+Files/plan | 5-8 | 10 | 15+ | | Context | ~50% | ~70% | 80%+ |
 
 **Red flags:**
 
@@ -225,8 +220,8 @@ Run all 6 dimension checks, collect issues.
 
 ### Step 4: Determine Status
 
-**PASSED:** No blockers, 0-2 warnings
-**ISSUES_FOUND:** Any blockers, or 3+ warnings
+**PASSED:** No blockers, 0-2 warnings **ISSUES_FOUND:** Any blockers, or 3+
+warnings
 
 ### Step 5: Output Results
 

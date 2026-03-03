@@ -1,6 +1,7 @@
 # Summary Template
 
-Template for `.gsd/phases/{N}/{plan}-SUMMARY.md` — execution summary after plan completion.
+Template for `.gsd/phases/{N}/{plan}-SUMMARY.md` — execution summary after plan
+completion.
 
 ---
 

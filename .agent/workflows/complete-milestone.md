@@ -63,8 +63,7 @@ Create `.gsd/milestones/{name}-SUMMARY.md`:
 ## Phases Completed
 
 1. Phase 1: {name} — {date}
-2. Phase 2: {name} — {date}
-   ...
+2. Phase 2: {name} — {date} ...
 
 ## Metrics
 
@@ -105,8 +104,8 @@ mv .gsd/phases/* ".gsd/milestones/{name}/"
 
 ## 5. Reset for Next Milestone
 
-Clear ROADMAP.md phases section (keep header).
-Update STATE.md to show milestone complete.
+Clear ROADMAP.md phases section (keep header). Update STATE.md to show milestone
+complete.
 
 ---
 

@@ -15,21 +15,18 @@ total_count: { Y }
 
 ## Summary
 
-**{X}/{Y}** must-haves verified
-**Verdict:** {PASS | FAIL | PARTIAL}
+**{X}/{Y}** must-haves verified **Verdict:** {PASS | FAIL | PARTIAL}
 
 ## Must-Haves
 
 ### ✅ 1. {Must-have description}
 
-**Status:** PASS
-**Method:** {How this was verified}
-**Evidence:**
+**Status:** PASS **Method:** {How this was verified} **Evidence:**
 ```
 
 {Actual command output or screenshot reference}
 
-```
+```text
 
 ### ❌ 2. {Must-have description}
 **Status:** FAIL
@@ -41,7 +38,7 @@ total_count: { Y }
 
 {Actual command output}
 
-```
+```text
 **Gap:** {What needs to be fixed}
 
 ### ⏭️ 3. {Must-have description}

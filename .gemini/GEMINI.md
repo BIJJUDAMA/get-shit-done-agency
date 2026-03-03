@@ -10,7 +10,8 @@
 
 **All canonical rules are in [PROJECT_RULES.md](../PROJECT_RULES.md).**
 
-This file provides Gemini-specific integration. For the complete methodology, see PROJECT_RULES.md.
+This file provides Gemini-specific integration. For the complete methodology,
+see PROJECT_RULES.md.
 
 ---
 
@@ -52,7 +53,8 @@ These rules integrate with the GSD workflows:
 
 ## Gemini-Specific Tips
 
-For Gemini-specific enhancements, see [adapters/GEMINI.md](../adapters/GEMINI.md).
+For Gemini-specific enhancements, see
+[adapters/GEMINI.md](../adapters/GEMINI.md).
 
 Key recommendations:
 
@@ -62,6 +64,6 @@ Key recommendations:
 
 ---
 
-_GSD Methodology adapted for Google Antigravity_
-_Canonical rules: [PROJECT_RULES.md](../PROJECT_RULES.md)_
-_Source: https://github.com/glittercowboy/get-shit-done_
+_GSD Methodology adapted for Google Antigravity_ _Canonical rules:
+[PROJECT_RULES.md](../PROJECT_RULES.md)_ _Source:
+https://github.com/glittercowboy/get-shit-done_

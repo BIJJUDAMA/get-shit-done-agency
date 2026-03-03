@@ -1,16 +1,22 @@
 # GSD-STYLE.md
 
-> **Comprehensive reference.** Core rules auto-load from `.gemini/GEMINI.md`. This document provides deep explanations and examples for when you need the full picture.
+> **Comprehensive reference.** Core rules auto-load from `.gemini/GEMINI.md`.
+> This document provides deep explanations and examples for when you need the
+> full picture.
 
-This document explains how GSD is written so future AI instances can contribute consistently.
+This document explains how GSD is written so future AI instances can contribute
+consistently.
 
 ## Core Philosophy
 
-GSD is a **meta-prompting system** where every file is both implementation and specification. Files teach the AI how to build software systematically. The system optimizes for:
+GSD is a **meta-prompting system** where every file is both implementation and
+specification. Files teach the AI how to build software systematically. The
+system optimizes for:
 
 - **Solo developer + AI workflow** (no enterprise patterns)
 - **Context engineering** (manage the context window deliberately)
-- **Plans as prompts** (PLAN.md files are executable, not documents to transform)
+- **Plans as prompts** (PLAN.md files are executable, not documents to
+  transform)
 
 ---
 
@@ -90,9 +96,11 @@ The `effort` attribute hints at task complexity for model selection:
 | `high`   | Complex logic, refactoring        | Reasoning models |
 | `max`    | Architecture, security-critical   | Deep reasoning   |
 
-**Default:** `medium` if omitted. No workflow should fail if this attribute is absent.
+**Default:** `medium` if omitted. No workflow should fail if this attribute is
+absent.
 
-See [docs/model-selection-playbook.md](docs/model-selection-playbook.md) for model selection guidance.
+See [docs/model-selection-playbook.md](docs/model-selection-playbook.md) for
+model selection guidance.
 
 ### Checkpoint Structure
 
@@ -153,8 +161,8 @@ When spawning subprocesses (plans, tasks), they get:
 
 ### State Preservation
 
-STATE.md exists because context windows are temporary.
-Everything important goes in STATE.md so the next session can continue.
+STATE.md exists because context windows are temporary. Everything important goes
+in STATE.md so the next session can continue.
 
 ---
 
@@ -162,17 +170,12 @@ Everything important goes in STATE.md so the next session can continue.
 
 ### Enterprise Patterns (Banned)
 
-❌ Stakeholder communication
-❌ Team coordination
-❌ Sprint ceremonies
-❌ Multiple approval levels
-❌ Separate environments requiring explicit promotion
+❌ Stakeholder communication ❌ Team coordination ❌ Sprint ceremonies ❌
+Multiple approval levels ❌ Separate environments requiring explicit promotion
 
 ### Temporal Language (Banned in Implementation Docs)
 
-❌ "First, we'll..."
-❌ "Next, we should..."
-❌ "Finally, we'll..."
+❌ "First, we'll..." ❌ "Next, we should..." ❌ "Finally, we'll..."
 
 ### Generic XML (Banned)
 
@@ -212,7 +215,7 @@ Everything important goes in STATE.md so the next session can continue.
 
 ### Format
 
-```
+```text
 type(scope): description
 ```
 
@@ -239,7 +242,7 @@ type(scope): description
 
 ### Banners
 
-```
+```text
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
  GSD ► STATUS MESSAGE
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -247,7 +250,7 @@ type(scope): description
 
 ### "Next Up" Format
 
-```
+```text
 ───────────────────────────────────────────────────────
 
 ▶ NEXT
@@ -261,7 +264,7 @@ type(scope): description
 
 When user input needed:
 
-```
+```text
 ⚠️ DECISION REQUIRED
 
 Option A: {description}

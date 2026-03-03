@@ -92,5 +92,4 @@ After all tasks complete, verify:
 | 2    | Core implementations                   |
 | 3    | Integration and validation             |
 
-Plans in the same wave can run in parallel.
-Later waves depend on earlier waves.
+Plans in the same wave can run in parallel. Later waves depend on earlier waves.

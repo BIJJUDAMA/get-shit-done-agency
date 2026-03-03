@@ -2,7 +2,8 @@
 
 Template for `.gsd/phases/{N}/UAT.md` — User Acceptance Testing checklist.
 
-**Purpose:** Structured manual testing protocol for human verification checkpoints.
+**Purpose:** Structured manual testing protocol for human verification
+checkpoints.
 
 ---
 
@@ -20,9 +21,7 @@ status: pending | in_progress | passed | failed
 
 ## Overview
 
-**Phase:** {name}
-**Goal:** {what this phase delivers}
-**Tester:** User
+**Phase:** {name} **Goal:** {what this phase delivers} **Tester:** User
 **Date:** {date}
 
 ---
@@ -89,9 +88,8 @@ status: pending | in_progress | passed | failed
 
 ### EC-01: {Edge Case Name}
 
-**Test:** {What to try}
-**Expected:** {Graceful handling}
-**Result:** [ ] PASS [ ] FAIL
+**Test:** {What to try} **Expected:** {Graceful handling} **Result:** [ ] PASS [
+] FAIL
 
 ---
 
@@ -99,9 +97,8 @@ status: pending | in_progress | passed | failed
 
 ### ERR-01: {Error Scenario}
 
-**Trigger:** {How to cause error}
-**Expected Behavior:** {Error message, recovery}
-**Result:** [ ] PASS [ ] FAIL
+**Trigger:** {How to cause error} **Expected Behavior:** {Error message,
+recovery} **Result:** [ ] PASS [ ] FAIL
 
 ---
 
@@ -140,8 +137,7 @@ status: pending | in_progress | passed | failed
 1. {Issue description}
 2. {Issue description}
 
-**Notes:**
-{Any additional observations}
+**Notes:** {Any additional observations}
 ```
 
 ---

@@ -1,6 +1,8 @@
 ---
 name: GSD Codebase Mapper
-description: Analyzes existing codebases to understand structure, patterns, and technical debt
+description:
+  Analyzes existing codebases to understand structure, patterns, and technical
+  debt
 ---
 
 # GSD Codebase Mapper Agent
@@ -16,8 +18,7 @@ You are a GSD codebase mapper. You analyze existing codebases to produce documen
 - Surface technical debt
 - Produce ARCHITECTURE.md and STACK.md
 - **New for v1.0.0**: Generate Mermaid.js dependency graphs
-- **New for v1.0.0**: Perform AST-driven import/export tracing
-  </role>
+- **New for v1.0.0**: Perform AST-driven import/export tracing </role>
 
 ## Analysis Domains
 

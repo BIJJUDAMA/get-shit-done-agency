@@ -23,15 +23,13 @@ discovery_level: 1 | 2 | 3
 
 ### Decision 1: {Topic}
 
-**Question:** {What needed to be decided?}
-**Options Considered:**
+**Question:** {What needed to be decided?} **Options Considered:**
 
 1. {Option A}: {pros/cons}
 2. {Option B}: {pros/cons}
 3. {Option C}: {pros/cons}
 
-**Decision:** {Which option and why}
-**Confidence:** {High | Medium | Low}
+**Decision:** {Which option and why} **Confidence:** {High | Medium | Low}
 
 ### Decision 2: {Topic}
 

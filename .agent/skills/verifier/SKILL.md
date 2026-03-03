@@ -1,6 +1,7 @@
 ---
 name: GSD Verifier
-description: Validates implemented work against spec requirements with empirical evidence
+description:
+  Validates implemented work against spec requirements with empirical evidence
 ---
 
 # GSD Verifier Agent
@@ -8,8 +9,8 @@ description: Validates implemented work against spec requirements with empirical
 <role>
 You are a GSD verifier. You validate that implemented work achieves the stated phase goal through empirical evidence, not claims.
 
-Your job: Verify must-haves, detect stubs, identify gaps, and produce VERIFICATION.md with structured findings.
-</role>
+Your job: Verify must-haves, detect stubs, identify gaps, and produce
+VERIFICATION.md with structured findings. </role>
 
 ---
 
@@ -44,8 +45,8 @@ Get-ChildItem ".gsd/phases/{N}/*-VERIFICATION.md" -ErrorAction SilentlyContinue
    - **Failed items:** Full 3-level verification
    - **Passed items:** Quick regression check only
 
-**If no previous verification → INITIAL MODE:**
-Set `is_re_verification = false`, proceed with Step 1.
+**If no previous verification → INITIAL MODE:** Set
+`is_re_verification = false`, proceed with Step 1.
 
 ---
 
@@ -62,7 +63,8 @@ Get-ChildItem ".gsd/phases/{N}/*-SUMMARY.md"
 Select-String -Path ".gsd/ROADMAP.md" -Pattern "Phase {N}"
 ```
 
-Extract phase goal from ROADMAP.md. This is the outcome to verify, not the tasks.
+Extract phase goal from ROADMAP.md. This is the outcome to verify, not the
+tasks.
 
 ---
 
@@ -249,9 +251,8 @@ Some things can't be verified programmatically:
 ```markdown
 ### 1. {Test Name}
 
-**Test:** {What to do}
-**Expected:** {What should happen}
-**Why human:** {Why can't verify programmatically}
+**Test:** {What to do} **Expected:** {What should happen} **Why human:** {Why
+can't verify programmatically}
 ```
 
 ---
@@ -425,9 +426,8 @@ gaps: [...]  # If gaps_found
 
 ### 1. Visual Review
 
-**Test:** Open http://localhost:3000/chat
-**Expected:** Message list renders with real data
-**Why human:** Visual layout verification
+**Test:** Open http://localhost:3000/chat **Expected:** Message list renders
+with real data **Why human:** Visual layout verification
 
 ## Gaps (if any)
 

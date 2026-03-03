@@ -49,11 +49,8 @@ Based on goal and must-haves, suggest phases:
 ```markdown
 ## Suggested Phases
 
-Phase 1: {Foundation/Setup}
-Phase 2: {Core Feature A}
-Phase 3: {Core Feature B}
-Phase 4: {Integration/Polish}
-Phase 5: {Verification/Launch}
+Phase 1: {Foundation/Setup} Phase 2: {Core Feature A} Phase 3: {Core Feature B}
+Phase 4: {Integration/Polish} Phase 5: {Verification/Launch}
 ```
 
 Ask user to confirm or modify.
@@ -65,8 +62,7 @@ Ask user to confirm or modify.
 ```markdown
 # ROADMAP.md
 
-> **Current Milestone**: {name}
-> **Goal**: {goal}
+> **Current Milestone**: {name} **Goal**: {goal}
 
 ## Must-Haves
 
@@ -77,13 +73,11 @@ Ask user to confirm or modify.
 
 ### Phase 1: {name}
 
-**Status**: ⬜ Not Started
-**Objective**: {description}
+**Status**: ⬜ Not Started **Objective**: {description}
 
 ### Phase 2: {name}
 
-**Status**: ⬜ Not Started
-**Objective**: {description}
+**Status**: ⬜ Not Started **Objective**: {description}
 
 ...
 ```

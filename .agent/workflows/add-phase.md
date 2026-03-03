@@ -50,9 +50,8 @@ Append:
 
 ### Phase {N}: {name}
 
-**Status**: ⬜ Not Started
-**Objective**: {objective}
-**Depends on**: Phase {N-1}
+**Status**: ⬜ Not Started **Objective**: {objective} **Depends on**: Phase
+{N-1}
 
 **Tasks**:
 

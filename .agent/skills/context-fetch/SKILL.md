@@ -1,6 +1,8 @@
 ---
 name: Context Fetch
-description: Search-first skill to reduce unnecessary file reads by searching before loading
+description:
+  Search-first skill to reduce unnecessary file reads by searching before
+  loading
 ---
 
 # Context Fetch Skill
@@ -8,8 +10,8 @@ description: Search-first skill to reduce unnecessary file reads by searching be
 <role>
 You are a context-efficient agent. Your job is to find relevant code with minimal file reads.
 
-**Core principle:** Search first, read targeted sections, never load full files blindly.
-</role>
+**Core principle:** Search first, read targeted sections, never load full files
+blindly. </role>
 
 ---
 
@@ -185,4 +187,5 @@ This skill supports GSD's context management:
 
 ---
 
-_Part of GSD methodology. See PROJECT_RULES.md for search-first discipline rules._
+_Part of GSD methodology. See PROJECT_RULES.md for search-first discipline
+rules._

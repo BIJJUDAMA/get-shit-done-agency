@@ -99,7 +99,8 @@ grep -rn "TODO\|FIXME" src/
 Add this to workflows for cross-platform commands:
 
 ```markdown
-**Note:** Commands shown are PowerShell. For Bash equivalents, see `.gsd/examples/cross-platform.md`
+**Note:** Commands shown are PowerShell. For Bash equivalents, see
+`.gsd/examples/cross-platform.md`
 ```
 
 ---

@@ -34,7 +34,7 @@ A simple RESTful API for managing todo items.
 
 ### Step 2: Map the Codebase (if existing)
 
-```
+```text
 /map
 ```
 
@@ -47,7 +47,7 @@ This creates:
 
 ### Step 3: Plan the Phases
 
-```
+```text
 /plan 1
 ```
 
@@ -78,7 +78,7 @@ Create SQLite database with todos table.
 
 ### Step 4: Execute the Phase
 
-```
+```text
 /execute 1
 ```
 
@@ -96,7 +96,7 @@ GSD:
 
 ### Step 5: Verify the Work
 
-```
+```text
 /verify 1
 ```
 
@@ -114,14 +114,14 @@ GSD:
 
 **If verified:**
 
-```
+```text
 /plan 2      → Plan next phase
 /execute 2   → Execute next phase
 ```
 
 **If issues found:**
 
-```
+```text
 /execute 1 --gaps-only   → Run fix plans
 /debug "API returns 500" → Debug the issue
 ```

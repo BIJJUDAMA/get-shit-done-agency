@@ -76,7 +76,8 @@ status: { complete | partial | blocked }
 
 ## Context for Fresh Session
 
-{Any information the next session needs — decisions made, blockers encountered, hypotheses to test}
+{Any information the next session needs — decisions made, blockers encountered,
+hypotheses to test}
 
 ## Token Usage (Optional)
 
@@ -99,8 +100,7 @@ For quick state dumps during debugging:
 ```markdown
 # Debug State Snapshot
 
-**Time:** {timestamp}
-**Problem:** {what you're debugging}
+**Time:** {timestamp} **Problem:** {what you're debugging}
 
 **Tried:**
 

@@ -16,9 +16,11 @@
 - Large context window (analyze multiple files)
 - Strong at structured output (specs, plans)
 
-**Why:** Planning requires understanding full system context and making architectural decisions.
+**Why:** Planning requires understanding full system context and making
+architectural decisions.
 
-**Examples:** Models with "thinking" or "reasoning" modes, larger context variants.
+**Examples:** Models with "thinking" or "reasoning" modes, larger context
+variants.
 
 ---
 
@@ -30,7 +32,8 @@
 - Good at code completion
 - Tool/function calling (for verification commands)
 
-**Why:** Implementation involves many small changes with frequent verification cycles.
+**Why:** Implementation involves many small changes with frequent verification
+cycles.
 
 **Examples:** Speed-tier models, code-specialized variants.
 
@@ -93,7 +96,8 @@
 
 ❌ **Using reasoning models for simple edits** — Overkill, slow, expensive
 
-❌ **Using fast models for architecture** — Insufficient depth for complex decisions
+❌ **Using fast models for architecture** — Insufficient depth for complex
+decisions
 
 ❌ **Ignoring context limits** — Leads to quality degradation
 
@@ -120,7 +124,8 @@
 
 ## GSD Model-Agnostic Principle
 
-GSD works with any capable LLM. The methodology compensates for model differences through:
+GSD works with any capable LLM. The methodology compensates for model
+differences through:
 
 1. **Structured plans** — Reduce ambiguity
 2. **Explicit verification** — Catch errors regardless of model
@@ -131,5 +136,5 @@ Choose models based on task needs, not methodology requirements.
 
 ---
 
-_See PROJECT_RULES.md for canonical rules._
-_See docs/runbook.md for operational procedures._
+_See PROJECT_RULES.md for canonical rules._ _See docs/runbook.md for operational
+procedures._

@@ -8,8 +8,7 @@ description: Strategies for compressing context to maximize token efficiency
 <role>
 You are a context compression specialist. Your job is to maintain rich understanding while using minimal tokens.
 
-**Core principle:** Compress aggressively, decompress only when needed.
-</role>
+**Core principle:** Compress aggressively, decompress only when needed. </role>
 
 ---
 
@@ -24,13 +23,11 @@ You are a context compression specialist. Your job is to maintain rich understan
 ```markdown
 ## File Summary: src/auth/login.ts
 
-**Purpose:** Handles user login via email/password
-**Key functions:**
+**Purpose:** Handles user login via email/password **Key functions:**
 
 - handleLogin(req, res) → Validates credentials, returns JWT
-- validateCredentials(email, password) → Checks against DB
-  **Dependencies:** bcrypt, jose, database
-  **Tokens saved:** ~400 (95 lines not reloaded)
+- validateCredentials(email, password) → Checks against DB **Dependencies:**
+  bcrypt, jose, database **Tokens saved:** ~400 (95 lines not reloaded)
 ```
 
 **Use instead of:** Re-reading the full file
@@ -39,7 +36,8 @@ You are a context compression specialist. Your job is to maintain rich understan
 
 ### Strategy 2: Outline Mode
 
-**When:** You need to understand a file's structure but not implementation details.
+**When:** You need to understand a file's structure but not implementation
+details.
 
 **How:**
 
@@ -162,11 +160,8 @@ When you need details from compressed context:
 ```markdown
 ## 📦 [filename]
 
-**Purpose:** [one line]
-**Key exports:** [list]
-**Dependencies:** [list]
-**Patterns:** [notable patterns used]
-**Watch for:** [gotchas or edge cases]
+**Purpose:** [one line] **Key exports:** [list] **Dependencies:** [list]
+**Patterns:** [notable patterns used] **Watch for:** [gotchas or edge cases]
 ```
 
 ### Outline Template
@@ -184,9 +179,7 @@ When you need details from compressed context:
 ```markdown
 ## Δ [filename]
 
-**+** [additions]
-**-** [removals]
-**~** [modifications]
+**+** [additions] **-** [removals] **~** [modifications]
 ```
 
 ---
@@ -203,11 +196,12 @@ Works with:
 
 ## Anti-Patterns
 
-❌ **Keeping full files in mental context** — Compress after understanding
-❌ **Re-reading instead of referencing** — Use summaries
-❌ **Loading full file for one function** — Use outline + target
-❌ **Skipping compression "to save time"** — Costs more later
+❌ **Keeping full files in mental context** — Compress after understanding ❌
+**Re-reading instead of referencing** — Use summaries ❌ **Loading full file for
+one function** — Use outline + target ❌ **Skipping compression "to save time"**
+— Costs more later
 
 ---
 
-_Part of GSD v1.6 Token Optimization. See docs/token-optimization-guide.md for examples._
+_Part of GSD v1.6 Token Optimization. See docs/token-optimization-guide.md for
+examples._
