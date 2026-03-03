@@ -20,7 +20,8 @@ A complete AI agency at your fingertips. Each agent is a specialized expert with
 - **Production-Ready:** Battle-tested workflows and success metrics.
 
 ### The 9 Divisions
-*A preview of the expertise you can access:*
+
+_A preview of the expertise you can access:_
 
 | Division             | Focus                         | Examples                                                     |
 | -------------------- | ----------------------------- | ------------------------------------------------------------ |
@@ -42,27 +43,31 @@ This toolkit bridges your chosen persona directly into your project directory us
 
 ### 1. Initialize the GSD Methodology in Your Project
 
-Run these one-liners from inside **your target project directory** to instantly compose your GSD Agency configuration. 
+Run these one-liners from inside **your target project directory** to instantly compose your GSD Agency configuration.
 
 > **Important:** This will securely download the methodology templates and prompt files to your project without impacting your global environment. It automatically grabs `PROJECT_RULES.md`, `GSD-STYLE.md`, and sample `.gitignore` rules for you.
 
 #### Windows (PowerShell)
+
 ```powershell
 Invoke-RestMethod https://raw.githubusercontent.com/BIJJUDAMA/get-shit-done-agency/main/bin/gsd-init.ps1 | Invoke-Expression
 ```
 
 #### Linux / macOS (Bash)
+
 ```bash
 curl -sL https://raw.githubusercontent.com/BIJJUDAMA/get-shit-done-agency/main/bin/gsd-init.sh | bash
 ```
 
 ### 2. Follow the Interactive Setup
+
 1. **Select a Role:** The script lists the 51 specialized personas. Choose the expert you need.
 2. **Environment Auto-Detection:** The script automatically detects if you are using `.gemini`, `.cursor`, `.claude`, etc.
 
 The script dynamically bridges the chosen persona with the rigorous GSD Agency methodology rules and outputs a finalized system instructions file directly into your workspace.
 
 **Headless Mode:**
+
 ```bash
 bash bin/gsd-init.sh --role=engineering-senior-developer --env=claude
 ```
@@ -73,41 +78,48 @@ bash bin/gsd-init.sh --role=engineering-senior-developer --env=claude
 
 The true power of the GSD Agency lies in its extensive set of slash commands. Once initialized, the AI operates entirely through these commands sent via standard chat.
 
-These commands enforce disciplined execution and project hygiene. 
+These commands enforce disciplined execution and project hygiene.
 
 ### Core Engineering & Execution
 
 **The Strategist:** Decompose requirements into executable phases in `ROADMAP.md` before coding.
+
 ```text
 /plan
 ```
 
 **The Engineer:** Safely implement the current phase from `STATE.md` using atomic checkpoints.
+
 ```text
 /execute
 ```
 
 **The Auditor:** Empirically validate the implemented work against the specs (e.g., test outputs).
+
 ```text
 /verify
 ```
 
 Engage systematic debugging protocols with persistent state tracking.
+
 ```text
 /debug
 ```
 
 **The Architect:** Analyze the codebase, update `ARCHITECTURE.md` and `STACK.md` with dependency graphs.
+
 ```text
 /map
 ```
 
 Context hygiene: Dump the AI's current session state for a clean handoff to avoid context loss.
+
 ```text
 /pause
 ```
 
 Restore context and progress from a previous session state snapshot.
+
 ```text
 /resume
 ```
@@ -115,63 +127,75 @@ Restore context and progress from a previous session state snapshot.
 ### Project & Milestone Management
 
 Initialize a new project directory with deep context gathering.
+
 ```text
 /new-project
 ```
 
 Create a new overarching milestone broken down into distinct phases.
+
 ```text
 /new-milestone
 ```
 
 Audit a milestone for quality, completeness, and edge-cases.
+
 ```text
 /audit-milestone
 ```
 
 Create remediation plans to address gaps found during the audit.
+
 ```text
 /plan-milestone-gaps
 ```
 
 Mark the current milestone as complete and securely archive it.
+
 ```text
 /complete-milestone
 ```
 
 ### Phase Operations
 
-Clarify scope, approach, and risks of a phase *before* formal planning.
+Clarify scope, approach, and risks of a phase _before_ formal planning.
+
 ```text
 /discuss-phase
 ```
 
 Perform deep technical investigations required for an upcoming phase.
+
 ```text
 /research-phase
 ```
 
 Append a new phase to the end of your current `ROADMAP.md`.
+
 ```text
 /add-phase
 ```
 
 Insert a phase between existing phases (automatically renumbers subsequent phases).
+
 ```text
 /insert-phase
 ```
 
 Safely remove a phase from the roadmap, triggering necessary dependency impact analysis.
+
 ```text
 /remove-phase
 ```
 
 Check current position in the roadmap and determine immediate next steps.
+
 ```text
 /progress
 ```
 
 Review the foundational assumptions made during phase planning.
+
 ```text
 /list-phase-assumptions
 ```
@@ -179,16 +203,19 @@ Review the foundational assumptions made during phase planning.
 ### Task Tracking & Utils
 
 Rapidly capture a specific task or follow-up item for later.
+
 ```text
 /add-todo
 ```
 
 List and review all pending todo items across the project.
+
 ```text
 /check-todos
 ```
 
 Instruct the AI to search the web for external documentation.
+
 ```text
 /web-search
 ```
@@ -196,21 +223,25 @@ Instruct the AI to search the web for external documentation.
 ### Toolkit Operations
 
 Install the latest GSD workflow files directly from GitHub.
+
 ```text
 /install
 ```
 
 Update existing GSD toolkit files to their latest repo versions.
+
 ```text
 /update
 ```
 
 Show recent GSD paradigm changes and new feature announcements.
+
 ```text
 /whats-new
 ```
 
 Display an overview of all available commands and their usage.
+
 ```text
 /help
 ```

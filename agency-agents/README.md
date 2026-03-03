@@ -36,6 +36,7 @@ cp -r agency-agents/* ~/.claude/agents/
 ### Option 2: Use as Reference
 
 Each agent file contains:
+
 - Identity & personality traits
 - Core mission & workflows
 - Technical deliverables with code examples
@@ -51,115 +52,115 @@ Browse the agents below and copy/adapt the ones you need!
 
 Building the future, one commit at a time.
 
-| Agent | Specialty | When to Use |
-|-------|-----------|-------------|
+| Agent                                                                  | Specialty                                         | When to Use                                                      |
+| ---------------------------------------------------------------------- | ------------------------------------------------- | ---------------------------------------------------------------- |
 | 🎨 [Frontend Developer](engineering/engineering-frontend-developer.md) | React/Vue/Angular, UI implementation, performance | Modern web apps, pixel-perfect UIs, Core Web Vitals optimization |
-| 🏗️ [Backend Architect](engineering/engineering-backend-architect.md) | API design, database architecture, scalability | Server-side systems, microservices, cloud infrastructure |
-| 📱 [Mobile App Builder](engineering/engineering-mobile-app-builder.md) | iOS/Android, React Native, Flutter | Native and cross-platform mobile applications |
-| 🤖 [AI Engineer](engineering/engineering-ai-engineer.md) | ML models, deployment, AI integration | Machine learning features, data pipelines, AI-powered apps |
-| 🚀 [DevOps Automator](engineering/engineering-devops-automator.md) | CI/CD, infrastructure automation, cloud ops | Pipeline development, deployment automation, monitoring |
-| ⚡ [Rapid Prototyper](engineering/engineering-rapid-prototyper.md) | Fast POC development, MVPs | Quick proof-of-concepts, hackathon projects, fast iteration |
-| 💎 [Senior Developer](engineering/engineering-senior-developer.md) | Laravel/Livewire, advanced patterns | Complex implementations, architecture decisions |
+| 🏗️ [Backend Architect](engineering/engineering-backend-architect.md)   | API design, database architecture, scalability    | Server-side systems, microservices, cloud infrastructure         |
+| 📱 [Mobile App Builder](engineering/engineering-mobile-app-builder.md) | iOS/Android, React Native, Flutter                | Native and cross-platform mobile applications                    |
+| 🤖 [AI Engineer](engineering/engineering-ai-engineer.md)               | ML models, deployment, AI integration             | Machine learning features, data pipelines, AI-powered apps       |
+| 🚀 [DevOps Automator](engineering/engineering-devops-automator.md)     | CI/CD, infrastructure automation, cloud ops       | Pipeline development, deployment automation, monitoring          |
+| ⚡ [Rapid Prototyper](engineering/engineering-rapid-prototyper.md)     | Fast POC development, MVPs                        | Quick proof-of-concepts, hackathon projects, fast iteration      |
+| 💎 [Senior Developer](engineering/engineering-senior-developer.md)     | Laravel/Livewire, advanced patterns               | Complex implementations, architecture decisions                  |
 
 ### 🎨 Design Division (6 Agents)
 
 Making it beautiful, usable, and delightful.
 
-| Agent | Specialty | When to Use |
-|-------|-----------|-------------|
-| 🎯 [UI Designer](design/design-ui-designer.md) | Visual design, component libraries, design systems | Interface creation, brand consistency, component design |
-| 🔍 [UX Researcher](design/design-ux-researcher.md) | User testing, behavior analysis, research | Understanding users, usability testing, design insights |
-| 🏛️ [UX Architect](design/design-ux-architect.md) | Technical architecture, CSS systems, implementation | Developer-friendly foundations, implementation guidance |
-| 🎭 [Brand Guardian](design/design-brand-guardian.md) | Brand identity, consistency, positioning | Brand strategy, identity development, guidelines |
-| 📖 [Visual Storyteller](design/design-visual-storyteller.md) | Visual narratives, multimedia content | Compelling visual stories, brand storytelling |
-| ✨ [Whimsy Injector](design/design-whimsy-injector.md) | Personality, delight, playful interactions | Adding joy, micro-interactions, Easter eggs, brand personality |
+| Agent                                                        | Specialty                                           | When to Use                                                    |
+| ------------------------------------------------------------ | --------------------------------------------------- | -------------------------------------------------------------- |
+| 🎯 [UI Designer](design/design-ui-designer.md)               | Visual design, component libraries, design systems  | Interface creation, brand consistency, component design        |
+| 🔍 [UX Researcher](design/design-ux-researcher.md)           | User testing, behavior analysis, research           | Understanding users, usability testing, design insights        |
+| 🏛️ [UX Architect](design/design-ux-architect.md)             | Technical architecture, CSS systems, implementation | Developer-friendly foundations, implementation guidance        |
+| 🎭 [Brand Guardian](design/design-brand-guardian.md)         | Brand identity, consistency, positioning            | Brand strategy, identity development, guidelines               |
+| 📖 [Visual Storyteller](design/design-visual-storyteller.md) | Visual narratives, multimedia content               | Compelling visual stories, brand storytelling                  |
+| ✨ [Whimsy Injector](design/design-whimsy-injector.md)       | Personality, delight, playful interactions          | Adding joy, micro-interactions, Easter eggs, brand personality |
 
 ### 📢 Marketing Division (8 Agents)
 
 Growing your audience, one authentic interaction at a time.
 
-| Agent | Specialty | When to Use |
-|-------|-----------|-------------|
-| 🚀 [Growth Hacker](marketing/marketing-growth-hacker.md) | Rapid user acquisition, viral loops, experiments | Explosive growth, user acquisition, conversion optimization |
-| 📝 [Content Creator](marketing/marketing-content-creator.md) | Multi-platform content, editorial calendars | Content strategy, copywriting, brand storytelling |
-| 🐦 [Twitter Engager](marketing/marketing-twitter-engager.md) | Real-time engagement, thought leadership | Twitter strategy, LinkedIn campaigns, professional social |
-| 📱 [TikTok Strategist](marketing/marketing-tiktok-strategist.md) | Viral content, algorithm optimization | TikTok growth, viral content, Gen Z/Millennial audience |
-| 📸 [Instagram Curator](marketing/marketing-instagram-curator.md) | Visual storytelling, community building | Instagram strategy, aesthetic development, visual content |
-| 🤝 [Reddit Community Builder](marketing/marketing-reddit-community-builder.md) | Authentic engagement, value-driven content | Reddit strategy, community trust, authentic marketing |
-| 📱 [App Store Optimizer](marketing/marketing-app-store-optimizer.md) | ASO, conversion optimization, discoverability | App marketing, store optimization, app growth |
-| 🌐 [Social Media Strategist](marketing/marketing-social-media-strategist.md) | Cross-platform strategy, campaigns | Overall social strategy, multi-platform campaigns |
+| Agent                                                                          | Specialty                                        | When to Use                                                 |
+| ------------------------------------------------------------------------------ | ------------------------------------------------ | ----------------------------------------------------------- |
+| 🚀 [Growth Hacker](marketing/marketing-growth-hacker.md)                       | Rapid user acquisition, viral loops, experiments | Explosive growth, user acquisition, conversion optimization |
+| 📝 [Content Creator](marketing/marketing-content-creator.md)                   | Multi-platform content, editorial calendars      | Content strategy, copywriting, brand storytelling           |
+| 🐦 [Twitter Engager](marketing/marketing-twitter-engager.md)                   | Real-time engagement, thought leadership         | Twitter strategy, LinkedIn campaigns, professional social   |
+| 📱 [TikTok Strategist](marketing/marketing-tiktok-strategist.md)               | Viral content, algorithm optimization            | TikTok growth, viral content, Gen Z/Millennial audience     |
+| 📸 [Instagram Curator](marketing/marketing-instagram-curator.md)               | Visual storytelling, community building          | Instagram strategy, aesthetic development, visual content   |
+| 🤝 [Reddit Community Builder](marketing/marketing-reddit-community-builder.md) | Authentic engagement, value-driven content       | Reddit strategy, community trust, authentic marketing       |
+| 📱 [App Store Optimizer](marketing/marketing-app-store-optimizer.md)           | ASO, conversion optimization, discoverability    | App marketing, store optimization, app growth               |
+| 🌐 [Social Media Strategist](marketing/marketing-social-media-strategist.md)   | Cross-platform strategy, campaigns               | Overall social strategy, multi-platform campaigns           |
 
 ### 📊 Product Division (3 Agents)
 
 Building the right thing at the right time.
 
-| Agent | Specialty | When to Use |
-|-------|-----------|-------------|
-| 🎯 [Sprint Prioritizer](product/product-sprint-prioritizer.md) | Agile planning, feature prioritization | Sprint planning, resource allocation, backlog management |
-| 🔍 [Trend Researcher](product/product-trend-researcher.md) | Market intelligence, competitive analysis | Market research, opportunity assessment, trend identification |
-| 💬 [Feedback Synthesizer](product/product-feedback-synthesizer.md) | User feedback analysis, insights extraction | Feedback analysis, user insights, product priorities |
+| Agent                                                              | Specialty                                   | When to Use                                                   |
+| ------------------------------------------------------------------ | ------------------------------------------- | ------------------------------------------------------------- |
+| 🎯 [Sprint Prioritizer](product/product-sprint-prioritizer.md)     | Agile planning, feature prioritization      | Sprint planning, resource allocation, backlog management      |
+| 🔍 [Trend Researcher](product/product-trend-researcher.md)         | Market intelligence, competitive analysis   | Market research, opportunity assessment, trend identification |
+| 💬 [Feedback Synthesizer](product/product-feedback-synthesizer.md) | User feedback analysis, insights extraction | Feedback analysis, user insights, product priorities          |
 
 ### 🎬 Project Management Division (5 Agents)
 
 Keeping the trains running on time (and under budget).
 
-| Agent | Specialty | When to Use |
-|-------|-----------|-------------|
-| 🎬 [Studio Producer](project-management/project-management-studio-producer.md) | High-level orchestration, portfolio management | Multi-project oversight, strategic alignment, resource allocation |
-| 🐑 [Project Shepherd](project-management/project-management-project-shepherd.md) | Cross-functional coordination, timeline management | End-to-end project coordination, stakeholder management |
-| ⚙️ [Studio Operations](project-management/project-management-studio-operations.md) | Day-to-day efficiency, process optimization | Operational excellence, team support, productivity |
-| 🧪 [Experiment Tracker](project-management/project-management-experiment-tracker.md) | A/B tests, hypothesis validation | Experiment management, data-driven decisions, testing |
-| 👔 [Senior Project Manager](project-management/project-manager-senior.md) | Realistic scoping, task conversion | Converting specs to tasks, scope management |
+| Agent                                                                                | Specialty                                          | When to Use                                                       |
+| ------------------------------------------------------------------------------------ | -------------------------------------------------- | ----------------------------------------------------------------- |
+| 🎬 [Studio Producer](project-management/project-management-studio-producer.md)       | High-level orchestration, portfolio management     | Multi-project oversight, strategic alignment, resource allocation |
+| 🐑 [Project Shepherd](project-management/project-management-project-shepherd.md)     | Cross-functional coordination, timeline management | End-to-end project coordination, stakeholder management           |
+| ⚙️ [Studio Operations](project-management/project-management-studio-operations.md)   | Day-to-day efficiency, process optimization        | Operational excellence, team support, productivity                |
+| 🧪 [Experiment Tracker](project-management/project-management-experiment-tracker.md) | A/B tests, hypothesis validation                   | Experiment management, data-driven decisions, testing             |
+| 👔 [Senior Project Manager](project-management/project-manager-senior.md)            | Realistic scoping, task conversion                 | Converting specs to tasks, scope management                       |
 
 ### 🧪 Testing Division (7 Agents)
 
 Breaking things so users don't have to.
 
-| Agent | Specialty | When to Use |
-|-------|-----------|-------------|
-| 📸 [Evidence Collector](testing/testing-evidence-collector.md) | Screenshot-based QA, visual proof | UI testing, visual verification, bug documentation |
-| 🔍 [Reality Checker](testing/testing-reality-checker.md) | Evidence-based certification, quality gates | Production readiness, quality approval, release certification |
-| 📊 [Test Results Analyzer](testing/testing-test-results-analyzer.md) | Test evaluation, metrics analysis | Test output analysis, quality insights, coverage reporting |
-| ⚡ [Performance Benchmarker](testing/testing-performance-benchmarker.md) | Performance testing, optimization | Speed testing, load testing, performance tuning |
-| 🔌 [API Tester](testing/testing-api-tester.md) | API validation, integration testing | API testing, endpoint verification, integration QA |
-| 🛠️ [Tool Evaluator](testing/testing-tool-evaluator.md) | Technology assessment, tool selection | Evaluating tools, software recommendations, tech decisions |
-| 🔄 [Workflow Optimizer](testing/testing-workflow-optimizer.md) | Process analysis, workflow improvement | Process optimization, efficiency gains, automation opportunities |
+| Agent                                                                    | Specialty                                   | When to Use                                                      |
+| ------------------------------------------------------------------------ | ------------------------------------------- | ---------------------------------------------------------------- |
+| 📸 [Evidence Collector](testing/testing-evidence-collector.md)           | Screenshot-based QA, visual proof           | UI testing, visual verification, bug documentation               |
+| 🔍 [Reality Checker](testing/testing-reality-checker.md)                 | Evidence-based certification, quality gates | Production readiness, quality approval, release certification    |
+| 📊 [Test Results Analyzer](testing/testing-test-results-analyzer.md)     | Test evaluation, metrics analysis           | Test output analysis, quality insights, coverage reporting       |
+| ⚡ [Performance Benchmarker](testing/testing-performance-benchmarker.md) | Performance testing, optimization           | Speed testing, load testing, performance tuning                  |
+| 🔌 [API Tester](testing/testing-api-tester.md)                           | API validation, integration testing         | API testing, endpoint verification, integration QA               |
+| 🛠️ [Tool Evaluator](testing/testing-tool-evaluator.md)                   | Technology assessment, tool selection       | Evaluating tools, software recommendations, tech decisions       |
+| 🔄 [Workflow Optimizer](testing/testing-workflow-optimizer.md)           | Process analysis, workflow improvement      | Process optimization, efficiency gains, automation opportunities |
 
 ### 🛟 Support Division (6 Agents)
 
 The backbone of the operation.
 
-| Agent | Specialty | When to Use |
-|-------|-----------|-------------|
-| 💬 [Support Responder](support/support-support-responder.md) | Customer service, issue resolution | Customer support, user experience, support operations |
-| 📊 [Analytics Reporter](support/support-analytics-reporter.md) | Data analysis, dashboards, insights | Business intelligence, KPI tracking, data visualization |
-| 💰 [Finance Tracker](support/support-finance-tracker.md) | Financial planning, budget management | Financial analysis, cash flow, business performance |
-| 🏗️ [Infrastructure Maintainer](support/support-infrastructure-maintainer.md) | System reliability, performance optimization | Infrastructure management, system operations, monitoring |
-| ⚖️ [Legal Compliance Checker](support/support-legal-compliance-checker.md) | Compliance, regulations, legal review | Legal compliance, regulatory requirements, risk management |
-| 📑 [Executive Summary Generator](support/support-executive-summary-generator.md) | C-suite communication, strategic summaries | Executive reporting, strategic communication, decision support |
+| Agent                                                                            | Specialty                                    | When to Use                                                    |
+| -------------------------------------------------------------------------------- | -------------------------------------------- | -------------------------------------------------------------- |
+| 💬 [Support Responder](support/support-support-responder.md)                     | Customer service, issue resolution           | Customer support, user experience, support operations          |
+| 📊 [Analytics Reporter](support/support-analytics-reporter.md)                   | Data analysis, dashboards, insights          | Business intelligence, KPI tracking, data visualization        |
+| 💰 [Finance Tracker](support/support-finance-tracker.md)                         | Financial planning, budget management        | Financial analysis, cash flow, business performance            |
+| 🏗️ [Infrastructure Maintainer](support/support-infrastructure-maintainer.md)     | System reliability, performance optimization | Infrastructure management, system operations, monitoring       |
+| ⚖️ [Legal Compliance Checker](support/support-legal-compliance-checker.md)       | Compliance, regulations, legal review        | Legal compliance, regulatory requirements, risk management     |
+| 📑 [Executive Summary Generator](support/support-executive-summary-generator.md) | C-suite communication, strategic summaries   | Executive reporting, strategic communication, decision support |
 
 ### 🥽 Spatial Computing Division (6 Agents)
 
 Building the immersive future.
 
-| Agent | Specialty | When to Use |
-|-------|-----------|-------------|
-| 🏗️ [XR Interface Architect](spatial-computing/xr-interface-architect.md) | Spatial interaction design, immersive UX | AR/VR/XR interface design, spatial computing UX |
-| 💻 [macOS Spatial/Metal Engineer](spatial-computing/macos-spatial-metal-engineer.md) | Swift, Metal, high-performance 3D | macOS spatial computing, Vision Pro native apps |
-| 🌐 [XR Immersive Developer](spatial-computing/xr-immersive-developer.md) | WebXR, browser-based AR/VR | Browser-based immersive experiences, WebXR apps |
+| Agent                                                                                          | Specialty                                 | When to Use                                           |
+| ---------------------------------------------------------------------------------------------- | ----------------------------------------- | ----------------------------------------------------- |
+| 🏗️ [XR Interface Architect](spatial-computing/xr-interface-architect.md)                       | Spatial interaction design, immersive UX  | AR/VR/XR interface design, spatial computing UX       |
+| 💻 [macOS Spatial/Metal Engineer](spatial-computing/macos-spatial-metal-engineer.md)           | Swift, Metal, high-performance 3D         | macOS spatial computing, Vision Pro native apps       |
+| 🌐 [XR Immersive Developer](spatial-computing/xr-immersive-developer.md)                       | WebXR, browser-based AR/VR                | Browser-based immersive experiences, WebXR apps       |
 | 🎮 [XR Cockpit Interaction Specialist](spatial-computing/xr-cockpit-interaction-specialist.md) | Cockpit-based controls, immersive systems | Cockpit control systems, immersive control interfaces |
-| 🍎 [visionOS Spatial Engineer](spatial-computing/visionos-spatial-engineer.md) | Apple Vision Pro development | Vision Pro apps, spatial computing experiences |
-| 🔌 [Terminal Integration Specialist](spatial-computing/terminal-integration-specialist.md) | Terminal integration, command-line tools | CLI tools, terminal workflows, developer tools |
+| 🍎 [visionOS Spatial Engineer](spatial-computing/visionos-spatial-engineer.md)                 | Apple Vision Pro development              | Vision Pro apps, spatial computing experiences        |
+| 🔌 [Terminal Integration Specialist](spatial-computing/terminal-integration-specialist.md)     | Terminal integration, command-line tools  | CLI tools, terminal workflows, developer tools        |
 
 ### 🎯 Specialized Division (3 Agents)
 
 The unique specialists who don't fit in a box.
 
-| Agent | Specialty | When to Use |
-|-------|-----------|-------------|
-| 🎭 [Agents Orchestrator](specialized/agents-orchestrator.md) | Multi-agent coordination, workflow management | Complex projects requiring multiple agent coordination |
-| 📊 [Data Analytics Reporter](specialized/data-analytics-reporter.md) | Business intelligence, data insights | Deep data analysis, business metrics, strategic insights |
-| 🔍 [LSP/Index Engineer](specialized/lsp-index-engineer.md) | Language Server Protocol, code intelligence | Code intelligence systems, LSP implementation, semantic indexing |
+| Agent                                                                | Specialty                                     | When to Use                                                      |
+| -------------------------------------------------------------------- | --------------------------------------------- | ---------------------------------------------------------------- |
+| 🎭 [Agents Orchestrator](specialized/agents-orchestrator.md)         | Multi-agent coordination, workflow management | Complex projects requiring multiple agent coordination           |
+| 📊 [Data Analytics Reporter](specialized/data-analytics-reporter.md) | Business intelligence, data insights          | Deep data analysis, business metrics, strategic insights         |
+| 🔍 [LSP/Index Engineer](specialized/lsp-index-engineer.md)           | Language Server Protocol, code intelligence   | Code intelligence systems, LSP implementation, semantic indexing |
 
 ---
 
@@ -168,6 +169,7 @@ The unique specialists who don't fit in a box.
 ### Scenario 1: Building a Startup MVP
 
 **Your Team**:
+
 1. 🎨 **Frontend Developer** - Build the React app
 2. 🏗️ **Backend Architect** - Design the API and database
 3. 🚀 **Growth Hacker** - Plan user acquisition
@@ -181,6 +183,7 @@ The unique specialists who don't fit in a box.
 ### Scenario 2: Marketing Campaign Launch
 
 **Your Team**:
+
 1. 📝 **Content Creator** - Develop campaign content
 2. 🐦 **Twitter Engager** - Twitter strategy and execution
 3. 📸 **Instagram Curator** - Visual content and stories
@@ -194,6 +197,7 @@ The unique specialists who don't fit in a box.
 ### Scenario 3: Enterprise Feature Development
 
 **Your Team**:
+
 1. 👔 **Senior Project Manager** - Scope and task planning
 2. 💎 **Senior Developer** - Complex implementation
 3. 🎨 **UI Designer** - Design system and components
@@ -250,15 +254,18 @@ Each agent is designed with:
 
 ## 🎁 What Makes This Special?
 
-### Unlike Generic AI Prompts:
+### Unlike Generic AI Prompts
+
 - ❌ Generic "Act as a developer" prompts
 - ✅ Deep specialization with personality and process
 
-### Unlike Prompt Libraries:
+### Unlike Prompt Libraries
+
 - ❌ One-off prompt collections
 - ✅ Comprehensive agent systems with workflows and deliverables
 
-### Unlike AI Tools:
+### Unlike AI Tools
+
 - ❌ Black box tools you can't customize
 - ✅ Transparent, forkable, adaptable agent personalities
 

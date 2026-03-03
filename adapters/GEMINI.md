@@ -11,10 +11,10 @@ This adapter provides optional enhancements for Gemini models in Antigravity.
 
 ### Flash vs Pro
 
-| Model Type | Best For |
-|------------|----------|
-| **Flash** | Quick iterations, simple edits, high-volume tasks |
-| **Pro** | Complex planning, large refactors, deep analysis |
+| Model Type | Best For                                          |
+| ---------- | ------------------------------------------------- |
+| **Flash**  | Quick iterations, simple edits, high-volume tasks |
+| **Pro**    | Complex planning, large refactors, deep analysis  |
 
 **Default recommendation:** Start with Pro for planning, switch to Flash for implementation.
 
@@ -24,7 +24,8 @@ This adapter provides optional enhancements for Gemini models in Antigravity.
 
 Gemini models often have large context windows. Optimize usage:
 
-1. **Load full files strategically** — Large context allows it, but still prefer search-first
+1. **Load full files strategically** — Large context allows it, but still prefer
+   search-first
 2. **Batch related files** — Group related code in single context load
 3. **Clear separation** — Use XML tags to separate file contents
 
@@ -89,4 +90,4 @@ For Gemini-specific tips, see adapters/GEMINI.md.
 
 ---
 
-*See PROJECT_RULES.md for canonical requirements.*
+_See PROJECT_RULES.md for canonical requirements._

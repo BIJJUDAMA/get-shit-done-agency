@@ -11,24 +11,24 @@ This adapter provides optional enhancements for Claude models in Antigravity.
 
 When available, activate extended thinking for:
 
-| Task Type | Recommended |
-|-----------|-------------|
-| Architecture planning | ✅ High effort |
-| Complex debugging | ✅ High effort |
-| Security analysis | ✅ High effort |
-| Simple edits | ❌ Not needed |
-| Quick iterations | ❌ Overhead too high |
+| Task Type             | Recommended          |
+| --------------------- | -------------------- |
+| Architecture planning | ✅ High effort       |
+| Complex debugging     | ✅ High effort       |
+| Security analysis     | ✅ High effort       |
+| Simple edits          | ❌ Not needed        |
+| Quick iterations      | ❌ Overhead too high |
 
 ### Effort Levels
 
 If the model supports effort/budget levels:
 
-| Level | Use Case |
-|-------|----------|
-| `low` | Simple edits, formatting, comments |
-| `medium` | Standard implementation (default) |
-| `high` | Complex logic, refactoring, debugging |
-| `max` | Architecture, security, critical decisions |
+| Level    | Use Case                                   |
+| -------- | ------------------------------------------ |
+| `low`    | Simple edits, formatting, comments         |
+| `medium` | Standard implementation (default)          |
+| `high`   | Complex logic, refactoring, debugging      |
+| `max`    | Architecture, security, critical decisions |
 
 **Default:** `medium` if not specified.
 
@@ -49,7 +49,8 @@ When artifacts are supported:
 Claude-specific context tips:
 
 1. **System prompt loading**: Core rules in system prompt, task details in user message
-2. **XML structure**: Claude parses XML well — use task XML format from GSD-STYLE.md
+2. **XML structure**: Claude parses XML well — use task XML format from
+   GSD-STYLE.md
 3. **Conversation history**: Minimal history preferred; use STATE.md for continuity
 
 ---
@@ -58,7 +59,7 @@ Claude-specific context tips:
 
 Not required, but if organizing Claude-specific files:
 
-```
+```text
 .claude/
 ├── CLAUDE.md      # This adapter (if using)
 └── settings.json  # IDE-specific settings
@@ -74,4 +75,4 @@ Not required, but if organizing Claude-specific files:
 
 ---
 
-*See PROJECT_RULES.md for canonical requirements.*
+_See PROJECT_RULES.md for canonical requirements._

@@ -1,6 +1,7 @@
 # 🤝 Contributing to The Agency
 
-First off, thank you for considering contributing to The Agency! It's people like you who make this collection of AI agents better for everyone.
+First off, thank you for considering contributing to The Agency! It's people
+like you who make this collection of AI agents better for everyone.
 
 ## 📋 Table of Contents
 
@@ -15,12 +16,15 @@ First off, thank you for considering contributing to The Agency! It's people lik
 
 ## 📜 Code of Conduct
 
-This project and everyone participating in it is governed by our Code of Conduct. By participating, you are expected to uphold this code:
+This project and everyone participating in it is governed by our Code of
+Conduct. By participating, you are expected to uphold this code:
 
-- **Be Respectful**: Treat everyone with respect. Healthy debate is encouraged, but personal attacks are not tolerated.
+- **Be Respectful**: Treat everyone with respect. Healthy debate is encouraged,
+  but personal attacks are not tolerated.
 - **Be Inclusive**: Welcome and support people of all backgrounds and identities.
 - **Be Collaborative**: What we create together is better than what we create alone.
-- **Be Professional**: Keep discussions focused on improving the agents and the community.
+- **Be Professional**: Keep discussions focused on improving the agents and
+  the community.
 
 ---
 
@@ -92,53 +96,66 @@ color: colorname or "#hexcode"
 # Agent Name
 
 ## 🧠 Your Identity & Memory
+
 - **Role**: Clear role description
 - **Personality**: Personality traits and communication style
 - **Memory**: What the agent remembers and learns
 - **Experience**: Domain expertise and perspective
 
 ## 🎯 Your Core Mission
+
 - Primary responsibility 1 with clear deliverables
 - Primary responsibility 2 with clear deliverables
 - Primary responsibility 3 with clear deliverables
 - **Default requirement**: Always-on best practices
 
 ## 🚨 Critical Rules You Must Follow
+
 Domain-specific rules and constraints that define the agent's approach
 
 ## 📋 Your Technical Deliverables
+
 Concrete examples of what the agent produces:
+
 - Code samples
 - Templates
 - Frameworks
 - Documents
 
 ## 🔄 Your Workflow Process
+
 Step-by-step process the agent follows:
+
 1. Phase 1: Discovery and research
 2. Phase 2: Planning and strategy
 3. Phase 3: Execution and implementation
 4. Phase 4: Review and optimization
 
 ## 💭 Your Communication Style
+
 - How the agent communicates
 - Example phrases and patterns
 - Tone and approach
 
 ## 🔄 Learning & Memory
+
 What the agent learns from:
+
 - Successful patterns
 - Failed approaches
 - User feedback
 - Domain evolution
 
 ## 🎯 Your Success Metrics
+
 Measurable outcomes:
+
 - Quantitative metrics (with numbers)
 - Qualitative indicators
 - Performance benchmarks
 
 ## 🚀 Advanced Capabilities
+
 Advanced techniques and approaches the agent masters
 ```
 
@@ -147,7 +164,8 @@ Advanced techniques and approaches the agent masters
 1. **🎭 Strong Personality**
    - Give the agent a distinct voice and character
    - Not "I am a helpful assistant" - be specific and memorable
-   - Example: "I default to finding 3-5 issues and require visual proof" (Evidence Collector)
+   - Example: "I default to finding 3-5 issues and require visual proof"
+     (Evidence Collector)
 
 2. **📋 Clear Deliverables**
    - Provide concrete code examples
@@ -172,6 +190,7 @@ Advanced techniques and approaches the agent masters
 ### What Makes a Great Agent?
 
 **Great agents have**:
+
 - ✅ Narrow, deep specialization
 - ✅ Distinct personality and voice
 - ✅ Concrete code/template examples
@@ -180,6 +199,7 @@ Advanced techniques and approaches the agent masters
 - ✅ Real-world testing and iteration
 
 **Avoid**:
+
 - ❌ Generic "helpful assistant" personality
 - ❌ Vague "I will help you with..." descriptions
 - ❌ No code examples or deliverables
@@ -222,17 +242,21 @@ Advanced techniques and approaches the agent masters
 
 ```markdown
 ## Agent Information
+
 **Agent Name**: [Name]
 **Category**: [engineering/design/marketing/etc.]
 **Specialty**: [One-line description]
 
 ## Motivation
+
 [Why is this agent needed? What gap does it fill?]
 
 ## Testing
+
 [How have you tested this agent? Real-world use cases?]
 
 ## Checklist
+
 - [ ] Follows agent template structure
 - [ ] Includes personality and voice
 - [ ] Has concrete code/template examples
@@ -274,9 +298,9 @@ Advanced techniques and approaches the agent masters
 // 4. Modern best practices
 
 interface AgentExample {
-  name: string;
-  specialty: string;
-  deliverables: string[];
+name: string;
+specialty: string;
+deliverables: string[];
 }
 \`\`\`
 ```
@@ -284,7 +308,8 @@ interface AgentExample {
 ### Tone
 
 - **Professional but approachable**: Not overly formal or casual
-- **Confident but not arrogant**: "Here's the best approach" not "Maybe you could try..."
+- **Confident but not arrogant**: "Here's the best approach" not "Maybe you
+  could try..."
 - **Helpful but not hand-holding**: Assume competence, provide depth
 - **Personality-driven**: Each agent should have a unique voice
 
@@ -301,7 +326,7 @@ Contributors who make significant contributions will be:
 
 ---
 
-## 🤔 Questions?
+## 🤔 Questions
 
 - **General Questions**: [GitHub Discussions](../../discussions)
 - **Bug Reports**: [GitHub Issues](../../issues)
@@ -315,9 +340,12 @@ Contributors who make significant contributions will be:
 ### For New Contributors
 
 - [README.md](README.md) - Overview and agent catalog
-- [Example: Frontend Developer](engineering/engineering-frontend-developer.md) - Well-structured agent example
-- [Example: Reddit Community Builder](marketing/marketing-reddit-community-builder.md) - Great personality example
-- [Example: Whimsy Injector](design/design-whimsy-injector.md) - Creative specialist example
+- [Example: Frontend Developer](engineering/engineering-frontend-developer.md)
+  - Well-structured agent example
+- [Example: Reddit Community Builder](marketing/marketing-reddit-community-builder.md)
+  - Great personality example
+- [Example: Whimsy Injector](design/design-whimsy-injector.md)
+  - Creative specialist example
 
 ### For Agent Design
 
@@ -328,7 +356,7 @@ Contributors who make significant contributions will be:
 
 ---
 
-## 🎉 Thank You!
+## 🎉 Thank You
 
 Your contributions make The Agency better for everyone. Whether you're:
 
@@ -342,12 +370,9 @@ Your contributions make The Agency better for everyone. Whether you're:
 
 ---
 
-<div align="center">
-
 **Questions? Ideas? Feedback?**
 
-[Open an Issue](../../issues) • [Start a Discussion](../../discussions) • [Submit a PR](../../pulls)
+[Open an Issue](../../issues) • [Start a Discussion](../../discussions) •
+[Submit a PR](../../pulls)
 
 Made with ❤️ by the community
-
-</div>

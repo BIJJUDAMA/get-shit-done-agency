@@ -5,6 +5,7 @@ All notable changes to GSD for Antigravity.
 ## [1.4.0] - 2026-01-17
 
 ### Added
+
 - **Template Parity** — 8 new templates (22 total)
   - `architecture.md`, `decisions.md`, `journal.md`, `stack.md`
   - `phase-summary.md`, `sprint.md`, `todo.md`, `spec.md`
@@ -16,6 +17,7 @@ All notable changes to GSD for Antigravity.
 ## [1.3.0] - 2026-01-17
 
 ### Added
+
 - **Validation Scripts** — expanded testing infrastructure
   - `validate-skills.ps1/.sh` — verify skill directory structure
   - `validate-all.ps1/.sh` — master script runs all validators
@@ -23,6 +25,7 @@ All notable changes to GSD for Antigravity.
 - `/help` now displays current version
 
 ### Changed
+
 - README.md updated with Testing section
 
 ---
@@ -30,10 +33,12 @@ All notable changes to GSD for Antigravity.
 ## [1.2.0] - 2026-01-17
 
 ### Added
+
 - **Cross-Platform Support** — All 16 workflow files now have Bash equivalents
 - `/web-search` — Search the web for technical research
 
 ### Changed
+
 - README.md updated with dual-syntax Getting Started (PowerShell + Bash)
 - README.md added Cross-Platform Support section
 - Git commands in workflows use `bash` syntax (cross-platform)
@@ -43,6 +48,7 @@ All notable changes to GSD for Antigravity.
 ## [1.1.0] - 2026-01-17
 
 ### Added
+
 - **Template Parity** — 14 templates aligned with original repository
   - `DEBUG.md`, `UAT.md`, `discovery.md`, `requirements.md`, etc.
 - **Examples** — `.gsd/examples/` directory
@@ -54,6 +60,7 @@ All notable changes to GSD for Antigravity.
 - `/whats-new` — Show recent changes
 
 ### Changed
+
 - Workflows now have "Related" sections for discoverability
 - Cross-linked workflows and skills
 
@@ -64,6 +71,7 @@ All notable changes to GSD for Antigravity.
 ### Added
 
 **Core Workflows (21)**
+
 - `/map` — Analyze codebase, generate ARCHITECTURE.md
 - `/plan` — Create PLAN.md with XML task structure
 - `/execute` — Wave-based execution with atomic commits
@@ -88,6 +96,7 @@ All notable changes to GSD for Antigravity.
 - `/help` — Command reference
 
 **Skills (8)**
+
 - `planner` — Task anatomy, goal-backward methodology
 - `executor` — Atomic commits, Need-to-Know context
 - `verifier` — Must-haves extraction, evidence requirements
@@ -98,14 +107,17 @@ All notable changes to GSD for Antigravity.
 - `empirical-validation` — Requires proof for changes
 
 **Documentation**
+
 - README.md with full methodology explanation
 - GSD-STYLE.md comprehensive style guide
 - Templates: PLAN.md, VERIFICATION.md, RESEARCH.md, SUMMARY.md
 - Examples: workflow-example.md, quick-reference.md, cross-platform.md
 
 **Rules**
+
 - GEMINI.md with 4 core rules enforcement
 - Planning Lock, State Persistence, Context Hygiene, Empirical Validation
 
 ### Attribution
+
 Adapted from [glittercowboy/get-shit-done](https://github.com/glittercowboy/get-shit-done) for Google Antigravity.
