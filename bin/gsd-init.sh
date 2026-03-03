@@ -186,7 +186,11 @@ else
         echo "  [$((i+1))] ${personas[$i]}"
     done
     echo ""
-    read -p "Select a role (1-${#personas[@]}): " role_input
+    if [[ -n "${CI:-}" ]] || [[ -n "${GITHUB_ACTIONS:-}" ]]; then
+        echo -e "\n[ERROR] No role specified and running in CI mode. Please use --role flag."
+        exit 1
+    fi
+    read -rp "Select a role (1-${#personas[@]}): " role_input
     
     if ! [[ "$role_input" =~ ^[0-9]+$ ]] || ((role_input < 1 || role_input > ${#personas[@]})); then
         echo -e "\n[ERROR] Please enter a valid number between 1 and ${#personas[@]}."
@@ -235,7 +239,11 @@ else
         echo "  [$((i+1))] ${env_keys[$i]}"
     done
     echo ""
-    read -p "Select target environment (1-${#env_keys[@]}): " env_input
+    if [[ -n "${CI:-}" ]] || [[ -n "${GITHUB_ACTIONS:-}" ]]; then
+        echo -e "\n[ERROR] No environment specified and running in CI mode. Please use --env flag."
+        exit 1
+    fi
+    read -rp "Select target environment (1-${#env_keys[@]}): " env_input
     
     if ! [[ "$env_input" =~ ^[0-9]+$ ]] || ((env_input < 1 || env_input > ${#env_keys[@]})); then
         echo -e "\n[ERROR] Please enter a valid number between 1 and ${#env_keys[@]}."

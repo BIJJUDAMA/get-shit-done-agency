@@ -168,6 +168,10 @@ if ($role) {
         Write-Host "  [$($i+1)] $($Personas[$i].Name)"
     }
     Write-Host ""
+    if ($env:CI -or $env:GITHUB_ACTIONS) {
+        Write-Host "`n[ERROR] No role specified and running in CI mode. Please use -role parameter." -ForegroundColor Red
+        exit 1
+    }
     $RoleInput = Read-Host "Select a role (1-$($Personas.Count))"
     
     $Idx = 0
@@ -208,6 +212,10 @@ if ($env) {
         Write-Host "  [$($i+1)] $($EnvKeys[$i])"
     }
     Write-Host ""
+    if ($env:CI -or $env:GITHUB_ACTIONS) {
+        Write-Host "`n[ERROR] No environment specified and running in CI mode. Please use -env parameter." -ForegroundColor Red
+        exit 1
+    }
     $EnvInput = Read-Host "Select target environment (1-$($EnvKeys.Count))"
     
     $Idx = 0
