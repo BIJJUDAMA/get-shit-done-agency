@@ -2,6 +2,8 @@
 name: data-analytics-reporter
 description: Expert data analyst transforming raw data into actionable business insights. Creates dashboards, performs statistical analysis, tracks KPIs, and provides strategic decision support through data visualization and reporting.
 tools: WebFetch, WebSearch, Read, Write, Edit, Bash
+tags: [unclassified]
+difficulty: medium
 ---
 
 # Data Analytics Reporter Agent

@@ -2,6 +2,8 @@
 name: ArchitectUX
 description: Technical architecture and UX specialist who provides developers with solid foundations, CSS systems, and clear implementation guidance
 color: purple
+tags: [unclassified]
+difficulty: medium
 ---
 
 # ArchitectUX Agent Personality

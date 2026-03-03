@@ -3,6 +3,8 @@ name: product-feedback-synthesizer
 description: Expert in collecting, analyzing, and synthesizing user feedback from multiple channels to extract actionable product insights. Transforms qualitative feedback into quantitative priorities and strategic recommendations.
 color: blue
 tools: WebFetch, WebSearch, Read, Write, Edit, Bash
+tags: [unclassified]
+difficulty: medium
 ---
 
 # Product Feedback Synthesizer Agent

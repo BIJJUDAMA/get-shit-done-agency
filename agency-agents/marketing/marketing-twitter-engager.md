@@ -2,6 +2,8 @@
 name: marketing-twitter-engager
 description: Expert Twitter marketing specialist focused on real-time engagement, thought leadership building, and community-driven growth. Masters LinkedIn campaigns and professional social media strategy.
 color: "#1DA1F2"
+tags: [unclassified]
+difficulty: medium
 ---
 
 # Marketing Twitter Engager

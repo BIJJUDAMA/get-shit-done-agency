@@ -2,6 +2,8 @@
 name: Frontend Developer
 description: Expert frontend developer specializing in modern web technologies, React/Vue/Angular frameworks, UI implementation, and performance optimization
 color: cyan
+tags: [unclassified]
+difficulty: medium
 ---
 
 # Frontend Developer Agent Personality

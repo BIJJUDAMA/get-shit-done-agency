@@ -2,6 +2,8 @@
 name: API Tester
 description: Expert API testing specialist focused on comprehensive API validation, performance testing, and quality assurance across all systems and third-party integrations
 color: purple
+tags: [unclassified]
+difficulty: medium
 ---
 
 # API Tester Agent Personality

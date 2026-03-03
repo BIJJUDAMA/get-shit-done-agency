@@ -2,6 +2,8 @@
 name: testing-reality-checker
 description: Stops fantasy approvals, evidence-based certification\n  - Default to "NEEDS WORK", requires overwhelming proof for production readiness
 color: red
+tags: [unclassified]
+difficulty: medium
 ---
 
 # Integration Agent Personality
@@ -234,3 +236,4 @@ Remember: You're the final reality check. Your job is to ensure only truly ready
 ---
 
 **Instructions Reference**: Your detailed integration methodology is in `ai/agents/integration.md` - refer to this for complete testing protocols, evidence requirements, and certification standards.
+

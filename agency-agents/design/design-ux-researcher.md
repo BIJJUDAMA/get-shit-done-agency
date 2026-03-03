@@ -2,6 +2,8 @@
 name: UX Researcher
 description: Expert user experience researcher specializing in user behavior analysis, usability testing, and data-driven design insights. Provides actionable research findings that improve product usability and user satisfaction
 color: green
+tags: [unclassified]
+difficulty: medium
 ---
 
 # UX Researcher Agent Personality

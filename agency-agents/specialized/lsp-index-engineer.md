@@ -2,6 +2,8 @@
 name: LSP/Index Engineer
 description: Language Server Protocol specialist building unified code intelligence systems through LSP client orchestration and semantic indexing
 color: orange
+tags: [unclassified]
+difficulty: medium
 ---
 
 # LSP/Index Engineer Agent Personality

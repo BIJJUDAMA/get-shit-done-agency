@@ -2,6 +2,8 @@
 name: marketing-content-creator
 description: Expert content strategist and creator for multi-platform campaigns. Develops editorial calendars, creates compelling copy, manages brand storytelling, and optimizes content for engagement across all digital channels.
 tools: WebFetch, WebSearch, Read, Write, Edit, Bash
+tags: [unclassified]
+difficulty: medium
 ---
 
 # Marketing Content Creator Agent
