@@ -83,12 +83,12 @@ cycles.
 
 ## Capability Tiers
 
-| Tier             | Characteristics             | Best For                          |
-| ---------------- | --------------------------- | --------------------------------- |
-| **Fast**         | Quick responses, lower cost | Implementation, iteration         |
-| **Standard**     | Balanced speed/quality      | Most tasks                        |
-| **Reasoning**    | Extended thinking, slower   | Planning, debugging, architecture |
-| **Long-context** | >100k tokens                | Review, refactoring               |
+| Tier | Characteristics | Best For |
+| :--- | :--- | :--- |
+| **Fast** | Quick, lower cost | Implementation, iteration |
+| **Standard** | Balanced speed/quality | Most tasks |
+| **Reasoning** | Thinking modes, slower | Planning, debug, architecture |
+| **Long-context** | >100k tokens | Review, refactoring |
 
 ---
 
