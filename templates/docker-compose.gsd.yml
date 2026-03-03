@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  gsd-verifier:
+    # A versatile base image supporting common full-stack environments
+    image: nikolaik/python-nodejs:python3.11-nodejs20-slim
+    container_name: gsd_sandbox
+    working_dir: /workspace
+    volumes:
+      # Mount project directory; tests run against real code
+      - ./:/workspace
+    environment:
+      - CI=true
+      - NODE_ENV=test
+      - PYTHONUNBUFFERED=1
+    command: /bin/bash -c "echo 'GSD Sandbox Ready. Run tests via docker exec.'"
+    # Keeps the container alive in the background during the session
+    tty: true

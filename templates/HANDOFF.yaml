@@ -1,0 +1,22 @@
+# GSD Agency Handshake Protocol
+# Generate this file prior to switching personas.
+
+handoff_metadata:
+  timestamp: ""
+  departing_agent: ""
+  target_agent: ""
+
+context_summary:
+  current_phase: "" # Reference the exact phase from STATE.md
+  objective_achieved: ""
+  pending_blockers: ""
+
+technical_payload:
+  files_modified:
+    - path: ""
+      purpose: ""
+  data_structures_changed: [] # e.g., "Added foreign key to users table"
+  required_dependencies: [] # e.g., "Ensure Supabase client is initialized"
+
+instructions_for_next_agent: |
+  [Write a strict, 2-sentence directive for the incoming agent. What is their immediate first step?]
