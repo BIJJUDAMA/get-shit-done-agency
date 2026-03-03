@@ -33,3 +33,5 @@ LICENSE
 # NOTE: Be careful with 'README.md' if you have your own. 
 # It is recommended to use GSD Agency from a subfolder or ~/.gsd-agency 
 # to avoid root-level file conflicts.
+
+node_modules/
