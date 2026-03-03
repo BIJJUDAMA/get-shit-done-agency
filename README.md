@@ -1,4 +1,4 @@
-# Get Shit Done Agency (GSD Agency)
+# Get Shit Done (GSD) Agency
 
 **Stop vibecoding. Start shipping.**
 
@@ -10,7 +10,7 @@ By combining these concepts, you get a roster of **51 highly specialized AI expe
 
 ## The Agency: 51 AI Specialists Ready to Transform Your Workflow
 
-A complete AI agency at your fingertips. From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.
+A complete AI agency at your fingertips. Each agent is a specialized expert with a unique personality, specific processes, and proven deliverable standards.
 
 ### Designed for Quality
 
@@ -19,30 +19,32 @@ A complete AI agency at your fingertips. From frontend wizards to Reddit communi
 - **Deliverable-Focused:** Real code, processes, and measurable outcomes.
 - **Production-Ready:** Battle-tested workflows and success metrics.
 
-### The Divisions
-*Here is a preview of the 9 divisions you can access:*
+### The 9 Divisions
+*A preview of the expertise you can access:*
 
-| Division             | Focus                         | Agent Examples                                               |
+| Division             | Focus                         | Examples                                                     |
 | -------------------- | ----------------------------- | ------------------------------------------------------------ |
-| **Engineering (7)**  | Building the future           | Frontend Developer, Backend Architect, AI Engineer           |
-| **Design (6)**       | Beautiful, usable, delightful | UI Designer, UX Researcher, Whimsy Injector                  |
-| **Marketing (8)**    | Growing your audience         | Growth Hacker, Content Creator, TikTok Strategist            |
+| **Engineering (7)**  | Building the future           | Frontend Developer, Backend Architect, DevOps Automator      |
+| **Design (6)**       | Beautiful, usable, delightful | UI Designer, UX Researcher, Brand Guardian                   |
+| **Marketing (8)**    | Growing your audience         | Growth Hacker, TikTok Strategist, Reddit Community Builder   |
 | **Product (3)**      | Building the right thing      | Sprint Prioritizer, Trend Researcher, Feedback Synthesizer   |
 | **Project Mgmt (5)** | Keeping trains running        | Studio Producer, Project Shepherd, Senior Project Manager    |
 | **Testing (7)**      | Breaking things safely        | Reality Checker, Evidence Collector, Performance Benchmarker |
 | **Support (6)**      | The operational backbone      | Support Responder, Analytics Reporter, Finance Tracker       |
-| **Spatial (6)**      | The immersive future          | XR Interface Architect, visionOS Spatial Engineer            |
+| **Spatial (6)**      | The immersive future          | XR Interface Architect, macOS Spatial Metal Engineer         |
 | **Specialized (3)**  | Unique experts                | Agents Orchestrator, LSP/Index Engineer                      |
 
 ---
 
-## Getting Started (Zero Dependency CLI)
+## Getting Started (Zero Dependency Setup)
 
-This tool is built entirely with native scripts, meaning there are no dependencies to install.
+This toolkit bridges your chosen persona directly into your project directory using native scripts. No deep global installations required.
 
-### Option 1: One-Liner [RECOMMENDED]
+### 1. Initialize the GSD Methodology in Your Project
 
-Use these commands from inside **ANY** project directory to instantly compose your GSD Agency config without manually cloning the entire repository.
+Run these one-liners from inside **your target project directory** to instantly compose your GSD Agency configuration. 
+
+> **Important:** This will securely download the methodology templates and prompt files to your project without impacting your global environment. It automatically grabs `PROJECT_RULES.md`, `GSD-STYLE.md`, and sample `.gitignore` rules for you.
 
 #### Windows (PowerShell)
 ```powershell
@@ -54,31 +56,13 @@ Invoke-RestMethod https://raw.githubusercontent.com/BIJJUDAMA/get-shit-done-agen
 curl -sL https://raw.githubusercontent.com/BIJJUDAMA/get-shit-done-agency/main/bin/gsd-init.sh | bash
 ```
 
-> [!NOTE]
-> These commands automatically download the latest GSD Agency library to `~/.gsd-agency` if it doesn't already exist, keeping your project directories clean.
+### 2. Follow the Interactive Setup
+1. **Select a Role:** The script lists the 51 specialized personas. Choose the expert you need.
+2. **Environment Auto-Detection:** The script automatically detects if you are using `.gemini`, `.cursor`, `.claude`, etc.
 
-### Option 2: Manual Clone
-If you prefer to have a local copy of the repository:
-1. Clone the repository: `git clone https://github.com/BIJJUDAMA/get-shit-done-agency.git`
-2. Run the initialization script from your target project directory:
-   - **Windows:** `powershell -ExecutionPolicy Bypass -File C:\path\to\gsd-init.ps1`
-   - **Linux/macOS:** `bash /path/to/gsd-init.sh`
+The script dynamically bridges the chosen persona with the rigorous GSD Agency methodology rules and outputs a finalized system instructions file directly into your workspace.
 
----
-
-## How to Use It
-
-When you run the script, it will guide you through an interactive bridge to configure your agent.
-
-1. **Select a Role:** Choose from the 51 specialized personas.
-2. **Environment Auto-Detection:** The script will automatically detect if you are using `.gemini`, `.cursor`, `.claude`, etc., based on your project files. If it can't, it will ask you.
-
-The script dynamically bridges the chosen persona with the GSD Agency methodology rules. It outputs a finalized system instructions file (like `GEMINI.md` or `.cursorrules`) directly into your project.
-
-### Headless Mode
-
-You can bypass the interactive prompts entirely:
-
+**Headless Mode:**
 ```bash
 bash bin/gsd-init.sh --role=engineering-senior-developer --env=claude
 ```
@@ -87,37 +71,169 @@ bash bin/gsd-init.sh --role=engineering-senior-developer --env=claude
 
 ## The Workflow Commands
 
-Once your agent is configured and the system context file is in your project, the agent operates entirely through **slash commands sent via chat**. You do not need to run any more CLI tools to use the workflow. 
+The true power of the GSD Agency lies in its extensive set of slash commands. Once initialized, the AI operates entirely through these commands sent via standard chat.
 
-| Command    | Action                                                                                               |
-| ---------- | ---------------------------------------------------------------------------------------------------- |
-| `/plan`    | Forces the AI to decompose your requirements into executable, atomic phases before writing any code. |
-| `/execute` | Tells the AI to implement the current phase safely, with atomic checkpoints.                         |
-| `/verify`  | Requires the AI to validate the implemented work empirically (e.g., test outputs, curl commands).    |
-| `/map`     | Instructs the AI to analyze your codebase and document the system architecture.                      |
-| `/pause`   | Instructs the AI to dump its current session state for a clean handoff so context isn't lost.        |
+These commands enforce disciplined execution and project hygiene. 
 
-> **Note:** These are typed directly as text chat messages to your AI assistant (e.g., Claude Desktop, Gemini, Cursor). They do not require any command-line execution or plugins.
+### Core Engineering & Execution
+
+**The Strategist:** Decompose requirements into executable phases in `ROADMAP.md` before coding.
+```text
+/plan
+```
+
+**The Engineer:** Safely implement the current phase from `STATE.md` using atomic checkpoints.
+```text
+/execute
+```
+
+**The Auditor:** Empirically validate the implemented work against the specs (e.g., test outputs).
+```text
+/verify
+```
+
+Engage systematic debugging protocols with persistent state tracking.
+```text
+/debug
+```
+
+**The Architect:** Analyze the codebase, update `ARCHITECTURE.md` and `STACK.md` with dependency graphs.
+```text
+/map
+```
+
+Context hygiene: Dump the AI's current session state for a clean handoff to avoid context loss.
+```text
+/pause
+```
+
+Restore context and progress from a previous session state snapshot.
+```text
+/resume
+```
+
+### Project & Milestone Management
+
+Initialize a new project directory with deep context gathering.
+```text
+/new-project
+```
+
+Create a new overarching milestone broken down into distinct phases.
+```text
+/new-milestone
+```
+
+Audit a milestone for quality, completeness, and edge-cases.
+```text
+/audit-milestone
+```
+
+Create remediation plans to address gaps found during the audit.
+```text
+/plan-milestone-gaps
+```
+
+Mark the current milestone as complete and securely archive it.
+```text
+/complete-milestone
+```
+
+### Phase Operations
+
+Clarify scope, approach, and risks of a phase *before* formal planning.
+```text
+/discuss-phase
+```
+
+Perform deep technical investigations required for an upcoming phase.
+```text
+/research-phase
+```
+
+Append a new phase to the end of your current `ROADMAP.md`.
+```text
+/add-phase
+```
+
+Insert a phase between existing phases (automatically renumbers subsequent phases).
+```text
+/insert-phase
+```
+
+Safely remove a phase from the roadmap, triggering necessary dependency impact analysis.
+```text
+/remove-phase
+```
+
+Check current position in the roadmap and determine immediate next steps.
+```text
+/progress
+```
+
+Review the foundational assumptions made during phase planning.
+```text
+/list-phase-assumptions
+```
+
+### Task Tracking & Utils
+
+Rapidly capture a specific task or follow-up item for later.
+```text
+/add-todo
+```
+
+List and review all pending todo items across the project.
+```text
+/check-todos
+```
+
+Instruct the AI to search the web for external documentation.
+```text
+/web-search
+```
+
+### Toolkit Operations
+
+Install the latest GSD workflow files directly from GitHub.
+```text
+/install
+```
+
+Update existing GSD toolkit files to their latest repo versions.
+```text
+/update
+```
+
+Show recent GSD paradigm changes and new feature announcements.
+```text
+/whats-new
+```
+
+Display an overview of all available commands and their usage.
+```text
+/help
+```
 
 ---
 
 ## Core Rules of the Methodology
 
-When the AI assumes its persona, it strictly follows the GSD Agency methodology:
+When the AI assumes its persona, it strictly follows the canonical rules defined in `PROJECT_RULES.md`:
 
-1. **Planning Lock:** No code is written until a `SPEC.md` is finalized.
-2. **State Persistence:** The AI maintains a `STATE.md` to remember decisions across sessions.
-3. **Context Hygiene:** If the AI fails multiple times, it triggers a state dump and asks for a fresh session context. 
-4. **Empirical Validation:** The AI must provide concrete proof that its code works (no "trust me").
+1. **Spec-Driven Planning Lock:** No implementation code is written until a `SPEC.md` is explicitly finalized.
+2. **State Persistence:** The AI continuously maintains a `STATE.md` document to remember decisions, progress, and blockers across separate chat sessions.
+3. **Context Hygiene:** If the AI encounters cascading failures, it utilizes the Context Health Monitor to trigger a state dump and request a fresh session to prevent cognitive degradation.
+4. **Empirical Validation:** The AI must provide concrete, empirical proof that its code works via terminal outputs, screenshots, or test results. "Trust me, it works" is strictly forbidden.
 
 ---
 
-## Recommended .gitignore
+## Recommended `.gitignore`
 
-To isolate the GSD Agency toolkit and prevent methodology or state files from being committed to your project, add the following to your `.gitignore`:
+When you run the init scripts, it's highly recommended you copy the `.gitignore-GSD-agency-sample` contents into your primary `.gitignore` to prevent GSD context files from polluting your git history:
 
 ```text
-# GSD Methodology & State
+# --- Methodology & State Management ---
 .gsd/
 STATE.md
 ROADMAP.md
@@ -126,32 +242,21 @@ PROJECT_RULES.md
 ARCHITECTURE.md
 STACK.md
 GSD-STYLE.md
-VERSION
-CHANGELOG.md
-model_capabilities.yaml
 
-# Agent Configurations
+# --- Agent Configurations & Adapters ---
 .claude.md
 .gemini/
 .cursorrules
 INSTRUCTIONS.md
-
-# Toolkit Directories (if cloned locally)
-.agent/
-adapters/
-agency-agents/
-bin/
-docs/
-scripts/
 ```
 
 ---
 
 ## Credits
 
-This toolkit would not exist without the incredible open-source work of two distinct projects. We have combined them here into a unified developer experience:
+This unified methodology represents the convergence of specialized persona design and rigid execution frameworks:
 
-- **[agency-agents](https://github.com/msitarzewski/agency-agents)**: Created by Michael Sitarzewski (`@msitarzewski`). Provided the highly tuned, specialized AI personas that act as the domain experts in this workflow.
-- **[get-shit-done](https://github.com/toonight/get-shit-done-for-antigravity)**: Created by `glittercowboy` (later adapted by `toonight`). Provided the strict spec-driven methodology, the atomic workflow rules, and the initial concept for the context engineering layer. 
+- **[agency-agents](https://github.com/msitarzewski/agency-agents)**: Created by Michael Sitarzewski (`@msitarzewski`). Brought 51 highly tuned, specialized AI personas that act as the diverse domain experts.
+- **[get-shit-done](https://github.com/toonight/get-shit-done-for-antigravity)**: Originally conceptualized by `glittercowboy`, expanded by `toonight`. Provided the strict spec-driven methodologies, context engineering patterns, and the foundational atomic workflow rules.
 
-Thank you to the original authors for developing the foundations of structured AI coding.
+Thank you to the original authors for constructing the building blocks of professional-grade AI developer environments.
